@@ -5,6 +5,7 @@
 		<title>Trang chủ</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.css">
 		<link rel="stylesheet" href="assets/css/stylesheet.css">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<!--Header-->
