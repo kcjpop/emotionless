@@ -60,13 +60,24 @@ body {
   width: 100px;
 }
 
+.validation-area, .validation-reset{
+  border-radius: 0px;
+}
+
 .validation-area{
-  width: 402px;
+  width: 407px;
   background: #aaa;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+}
+
+.validation-reset{
+  margin-left: -4px;
+  padding-top: 9px;
+  border-bottom-right-radius: 4px;
 }
 
 .validation{
-  margin: 5px 0px;
+  margin: -1px 0px 5px 0px;
 }

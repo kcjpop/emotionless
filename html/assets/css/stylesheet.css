@@ -1,6 +1,23 @@
+body{
+  background-color: #eee;
+}
+
+.navbar-inverse{
+  background-color: #333;
+  border-color: #111;
+}
+
 .navbar-inverse .navbar-brand {
     color: #fff;
 }	
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #111;
+}
+
+.navbar-form{
+  margin-right: -25px;
+}
 
 .carousel {
   margin-top: -20px;
@@ -57,8 +74,8 @@
   border-bottom: none;
 }
 
-#footer hr{
-  border: 1px solid #bbb;
+hr{
+  border: 1px solid #ccc;
 }
 
 .post-heading{
@@ -99,4 +116,16 @@
 
 .tutor-table td{
   text-align: center;
+}
+
+#footer p{
+  margin: 0px;
+}
+
+#footer{
+  padding-bottom: 30px;
+}
+
+.home-img{
+  width: 18px
 }
