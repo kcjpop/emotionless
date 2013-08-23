@@ -129,7 +129,7 @@ hr{
 }
 
 .home-img{
-  width: 18px
+  width: 16px
 }
 
 .photo-container{
@@ -256,4 +256,8 @@ hr{
   text-align: center;
   line-height: 18px;
   font-style: italic;
+}
+
+#portfolio p{
+  text-align: justify;
 }

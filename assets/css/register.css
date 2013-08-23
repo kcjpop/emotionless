@@ -8,6 +8,7 @@ body {
   max-width: 500px;
   padding: 15px;
   margin: 0 auto;
+  position: relative;
 }
 .form-signup .form-signup-heading,
 .form-signup .checkbox {
@@ -79,5 +80,11 @@ body {
 }
 
 .validation{
-  margin: -1px 0px 5px 0px;
+  margin: -1px 0px 10px 0px;
+}
+
+.home-link{
+  position: absolute;
+  top: 50px;
+  right: 20px;
 }
