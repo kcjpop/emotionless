@@ -1,13 +1,6 @@
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eee;
-}
-
 .form-signup {
-  max-width: 500px;
   padding: 15px;
-  margin: 0 auto;
+  margin-top: -40px;
   position: relative;
 }
 .form-signup .form-signup-heading,
@@ -29,9 +22,13 @@ body {
   z-index: 2;
 }
 
-.form-signup input{
+.form-signup input, .form-signup textarea{
   margin-bottom: -1px;
   border-radius: 0;
+}
+
+.form-signup textarea{
+  resize: none;
 }
 
 .form-signup .top-input{
@@ -59,6 +56,13 @@ body {
 
 .btn-lg{
   width: 100px;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.form-signup .bottom-input{
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .validation-area, .validation-reset{
@@ -66,25 +70,34 @@ body {
 }
 
 .validation-area{
-  width: 407px;
+  width: 240px; 
   background: #aaa;
   text-align: center;
   font-size: 16px;
+  border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 .validation-reset{
   margin-left: -4px;
   padding-top: 9px;
+  border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.validation{
-  margin: -1px 0px 10px 0px;
+.validation{  
+  margin: 10px 0px;
 }
 
-.home-link{
-  position: absolute;
-  top: 50px;
-  right: 20px;
+.form-panel-heading{
+  font-style: italic;
+  font-size: 16px;
+}
+
+.form-right{
+  margin-top: 60px;
+}
+
+.form-submit{
+  margin-right: 5px;
 }
