@@ -9,7 +9,7 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="//placehold.it/1320x250" alt="">
+					<img src="" alt="">
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>Một cái slider chạy linh tinh 1</h1>
@@ -19,7 +19,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="//placehold.it/1320x250" alt="">
+					<img src="" alt="">
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>Một cái slider chạy linh tinh 2</h1>
@@ -29,7 +29,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="//placehold.it/1320x250" alt="">
+					<img src="" alt="">
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>Một cái slider chạy linh tinh 3</h1>
@@ -51,7 +51,7 @@
 					<h2 class="tutor-name">Tên Một Ai Đó</h2>
 					<span class="tutor-major">Môn dạy: Toán 12</span>
 					<p class="text-left">Đôi dòng giới thiệu bản thân Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, totam, itaque, repellat inventore esse blanditiis optio ipsa eveniet unde repudiandae voluptate magnam fugit officia provident sint vero necessitatibus impedit perferendis!</p>
-					<p><a class="btn btn-primary" href="#">Xem chi tiết &raquo;</a></p>
+					<a class="btn btn-primary pull-right" href="#">Xem chi tiết &raquo;</a>
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col-lg-4 text-center">
@@ -59,7 +59,7 @@
 					<h2 class="tutor-name">Tên Một Ai Đó</h2>
 					<span class="tutor-major">Môn dạy: Toán 12</span>
 					<p class="text-left">Đôi dòng giới thiệu bản thân Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, totam, itaque, repellat inventore esse blanditiis optio ipsa eveniet unde repudiandae voluptate magnam fugit officia provident sint vero necessitatibus impedit perferendis!</p>
-					<p><a class="btn btn-primary" href="#">Xem chi tiết &raquo;</a></p>
+					<a class="btn btn-primary pull-right" href="#">Xem chi tiết &raquo;</a>
 				</div>
 				<!-- /.col-lg-4 -->
 				<div class="col-lg-4 text-center">
@@ -67,7 +67,7 @@
 					<h2 class="tutor-name">Tên Một Ai Đó</h2>
 					<span class="tutor-major">Môn dạy: Toán 12</span>
 					<p class="text-left">Đôi dòng giới thiệu bản thân Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, totam, itaque, repellat inventore esse blanditiis optio ipsa eveniet unde repudiandae voluptate magnam fugit officia provident sint vero necessitatibus impedit perferendis!</p>
-					<p><a class="btn btn-primary" href="#">Xem chi tiết &raquo;</a></p>
+					<a class="btn btn-primary pull-right" href="#">Xem chi tiết &raquo;</a>
 				</div>
 				<!-- /.col-lg-4 -->
 			</div>
