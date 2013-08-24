@@ -1,13 +1,6 @@
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eee;
-}
-
 .form-signup {
-  max-width: 500px;
   padding: 15px;
-  margin: 0 auto;
+  margin-top: -40px;
   position: relative;
 }
 .form-signup .form-signup-heading,
@@ -29,9 +22,13 @@ body {
   z-index: 2;
 }
 
-.form-signup input{
+.form-signup .form-control{
   margin-bottom: -1px;
   border-radius: 0;
+}
+
+.form-signup textarea{
+  resize: none;
 }
 
 .form-signup .top-input{
@@ -44,7 +41,8 @@ body {
   border-bottom-right-radius: 4px;
 }
 
-.form-label, .form-control{
+.form-label, .form-signup .form-control, 
+.form-panel-heading{
   font-size: 16px;
 }
 
@@ -58,7 +56,14 @@ body {
 }
 
 .btn-lg{
-  width: 100px;
+  width: 80px;
+  height: 40px;
+  padding: 0;
+}
+
+.form-signup .bottom-input{
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .validation-area, .validation-reset{
@@ -66,25 +71,85 @@ body {
 }
 
 .validation-area{
-  width: 407px;
   background: #aaa;
   text-align: center;
-  font-size: 16px;
+  border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 .validation-reset{
   margin-left: -4px;
-  padding-top: 9px;
+  padding-top: 5px;
+  border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.validation{
-  margin: -1px 0px 10px 0px;
+.validation-area, .validation-reset{
+   font-size: 16px;
+   display: inline;
 }
 
-.home-link{
-  position: absolute;
-  top: 50px;
-  right: 20px;
+.validation{  
+  margin: 10px 0px 10px -15px;
+  display: block;
 }
+
+.form-right{
+  margin-top: 60px;
+}
+
+.form-submit{
+  margin-right: 5px;
+}
+
+.dob{
+  width: 32%;
+}
+
+.sex{
+  margin-top: 10px;
+  width: 99%;
+}
+
+.tutor-info{
+  margin-top: 5px;
+}
+
+.tutor-majors, .tutor-classes{
+  display: inline-block;
+}
+
+.tutor-majors{
+  width: 60%; 
+  padding-left: 5px;
+}
+
+.tutor-majors .label-head{
+  display: block; 
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.tutor-majors label{
+  width: 55px;
+  margin: 0 15px 10px 0;
+}
+
+.tutor-majors label, .tutor-classes label{
+  font-weight: normal;
+}
+
+.tutor-classes{
+  width: 34%;
+  position: absolute;
+}
+
+.tutor-classes label{
+  margin-bottom: 10px;
+}
+
+.tutor-classes .form-control{
+  padding: 0px;
+  margin-top: -10px;
+}
+
