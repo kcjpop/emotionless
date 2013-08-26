@@ -1,7 +1,6 @@
 <!--footer-->
-	<div id="footer">
+  <div id="footer" class="navbar navbar-inverse navbar-static-bottom">
       <div class="container">
-        <hr>
         <p class='copy-right'>&copy; Azeroz Nguyễn</p>
         <strong>Công ty gia sư gì gì đó</strong>
         <p>SĐT: 090 xxx xxxx</p>
@@ -12,12 +11,13 @@
 
     <!--JavaScript-->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.js"></script>	
+    <script src="assets/js/bootstrap.js"></script>  
     <script>
       $(function() {
-          $('.carousel').carousel({interval: 2000});
-        });
+        $('.carousel').carousel({interval: 2000});
+      });
     </script>
+    <script src="assets/js/register.js"></script>
     <!--/JavaScript-->
 </body>
 </html>
