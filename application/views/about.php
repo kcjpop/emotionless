@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Giới thiệu</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/stylesheet.css">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<!--Header-->
-	<!--/Header-->
-	
-	<!--Navbar-->
-	<div id="nav" class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Trung tâm gia sư</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html"><img class="home-img" src="assets/img/home.png" alt=""></a></li>
-            <li  class="active"><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-            <li><a href="register.html">Đăng ký</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Dịch vụ</li>
-                <li><a href="#">Tìm gia sư</a></li>
-                <li><a href="#">Đăng ký làm gia sư</a></li>
-                <li><a href="#">Các lớp hiện có</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Các lớp luyện thi</li>
-                <li><a href="#">LT THPT</a></li>
-                <li><a href="#">LTĐH</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Tên người dùng" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Mật khẩu" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Đăng nhập</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-    <!--/Navbar-->
-    <!-- Carousel
+<!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <!-- Indicators -->
@@ -66,7 +14,7 @@
             <div class="carousel-caption">
               <h1>Một cái slider chạy linh tinh</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, suscipit, sapiente quaerat molestias nobis ad eligendi explicabo adipisci omnis accusantium. Explicabo cumque quae fuga labore alias quod inventore architecto debitis.</p>
-              <p><a class="btn btn-large btn-primary" href="register.html">Đăng ký làm gia sư ngay!</a></p>
+              <p><a class="btn btn-large btn-primary" href="register">Đăng ký làm gia sư ngay!</a></p>
             </div>
           </div>
         </div>
@@ -144,26 +92,3 @@
     </div>
   </div>
   <!--/content-->
-
-
-	<!--footer-->
-  <div id="footer" class="navbar navbar-inverse navbar-static-bottom">
-      <div class="container">
-        <p class='copy-right'>&copy; Azeroz Nguyễn</p>
-        <strong>Công ty gia sư gì gì đó</strong>
-        <p>SĐT: 090 xxx xxxx</p>
-        <p>Địa chỉ: số 123 đường xyz p.a Q.b tp.C Việt Nam</p>
-      </div>
-    </div>
-    <!--/footer-->
-    <!--JavaScript-->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.js"></script>	
-    <script>
-      $(function() {
-        $('.carousel').carousel({interval: 2000});
-      });
-    </script>
-    <!--/JavaScript-->
-</body>
-</html>

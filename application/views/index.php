@@ -13,7 +13,7 @@
             <div class="carousel-caption">
               <h1>Một cái slider chạy linh tinh 1</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, suscipit, sapiente quaerat molestias nobis ad eligendi explicabo adipisci omnis accusantium. Explicabo cumque quae fuga labore alias quod inventore architecto debitis.</p>
-              <p><a class="btn btn-large btn-primary" href="register.html">Đăng ký làm gia sư ngay!</a></p>
+              <p><a class="btn btn-large btn-primary" href="register">Đăng ký làm gia sư ngay!</a></p>
             </div>
           </div>
         </div>
@@ -44,25 +44,25 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4 text-center">
-          <a href="portfolio.html"><img class="img-thumbnail tutor-img" src="assets/img/img.jpg" alt="Generic placeholder image"></a>
+          <a href="portfolio"><img class="img-thumbnail tutor-img" src="assets/img/img.jpg" alt="Generic placeholder image"></a>
           <h2 class="tutor-name">Tên Một Ai Đó</h2>
           <span class="tutor-major">Môn dạy: Toán 12</span>
           <p>Đôi dòng giới thiệu bản thân Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, totam, itaque, repellat inventore esse blanditiis optio ipsa eveniet unde repudiandae voluptate magnam fugit officia provident sint vero necessitatibus impedit perferendis!</p>
-          <a class="btn btn-primary pull-right" href="portfolio.html">Xem chi tiết &raquo;</a>
+          <a class="btn btn-primary pull-right" href="portfolio">Xem chi tiết &raquo;</a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
-          <a href="portfolio.html"><img class="img-thumbnail tutor-img" src="assets/img/img.jpg" alt="Generic placeholder image"></a>
+          <a href="portfolio"><img class="img-thumbnail tutor-img" src="assets/img/img.jpg" alt="Generic placeholder image"></a>
           <h2 class="tutor-name">Tên Một Ai Đó</h2>
           <span class="tutor-major">Môn dạy: Toán 12</span>
           <p>Đôi dòng giới thiệu bản thân Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, totam, itaque, repellat inventore esse blanditiis optio ipsa eveniet unde repudiandae voluptate magnam fugit officia provident sint vero necessitatibus impedit perferendis!</p>
-          <a class="btn btn-primary pull-right" href="portfolio.html">Xem chi tiết &raquo;</a>
+          <a class="btn btn-primary pull-right" href="portfolio">Xem chi tiết &raquo;</a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
-          <a href="portfolio.html"><img class="img-thumbnail tutor-img" src="assets/img/img.jpg" alt="Generic placeholder image"></a>
+          <a href="portfolio"><img class="img-thumbnail tutor-img" src="assets/img/img.jpg" alt="Generic placeholder image"></a>
           <h2 class="tutor-name">Tên Một Ai Đó</h2>
           <span class="tutor-major">Môn dạy: Toán 12</span>
           <p>Đôi dòng giới thiệu bản thân Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, totam, itaque, repellat inventore esse blanditiis optio ipsa eveniet unde repudiandae voluptate magnam fugit officia provident sint vero necessitatibus impedit perferendis!</p>
-          <a class="btn btn-primary pull-right" href="portfolio.html">Xem chi tiết &raquo;</a>
+          <a class="btn btn-primary pull-right" href="portfolio">Xem chi tiết &raquo;</a>
         </div><!-- /.col-lg-4 -->
 	  </div>
 	</div>

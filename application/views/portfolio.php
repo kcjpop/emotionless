@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Giới thiệu</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/stylesheet.css">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<!--Header-->
-	<!--/Header-->
-	
-	<!--Navbar-->
-	<div id="nav" class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Trung tâm gia sư</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html"><img class="home-img" src="assets/img/home.png" alt=""></a></li>
-            <li  class="active"><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-            <li><a href="register.html">Đăng ký</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Dịch vụ</li>
-                <li><a href="#">Tìm gia sư</a></li>
-                <li><a href="#">Đăng ký làm gia sư</a></li>
-                <li><a href="#">Các lớp hiện có</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Các lớp luyện thi</li>
-                <li><a href="#">LT THPT</a></li>
-                <li><a href="#">LTĐH</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Tên người dùng" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Mật khẩu" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Đăng nhập</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-    <!--/Navbar-->
-    <!-- Carousel
+<!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <!-- Indicators -->
@@ -66,7 +14,7 @@
             <div class="carousel-caption">
               <h1>Một cái slider chạy linh tinh</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, suscipit, sapiente quaerat molestias nobis ad eligendi explicabo adipisci omnis accusantium. Explicabo cumque quae fuga labore alias quod inventore architecto debitis.</p>
-              <p><a class="btn btn-large btn-primary" href="register.html">Đăng ký làm gia sư ngay!</a></p>
+              <p><a class="btn btn-large btn-primary" href="register">Đăng ký làm gia sư ngay!</a></p>
             </div>
           </div>
         </div>
@@ -99,14 +47,46 @@
   <div id="content" class="container">
     <div class="row">
         <div class="col-md-8 post">
-          <h4 class="post-heading">Bài viết có cái tiêu đề dài trời ơi đất hỡi, ờ thực sự cũng không dài lắm</h4>
-          <span class='poster'>Ngừời viết: Mr.X</span>
-          <span class="post-timer">Được đăng vào lúc: timer</span>
+          <h4 class="post-heading">Giới thiệu về một em gia sư xinh đẹp nào nào đó</h4>
+          <div class="photo-container">
+                <ul>
+                  <li><a id="photo1" class="link"><span class='thumbnail top left1'>CSS</span></a></li>
+                  <li><a id="photo2" class="link"><span class='thumbnail top left2'>CSS</span></a></li>
+                  <li><a id="photo3" class="link"><span class='thumbnail top left3'>CSS</span></a></li> 
+                </ul>
+              </div>
+              <div class="info-container">
+                <h3>Thông tin</h3>
+                <b>Tên:</b>
+                <span>Lung Thị Linh</span>
+                <b>Ngày sinh:</b>
+                <span>dd/mm/yyyy</span>
+                <b>Môn dạy:</b>
+                <span>Toán 12, Anh 13</span>
+                <b>Khu vực:</b>
+                <span>Q.1, Q.3, Q.Tân Bình</span>
+                <b>Số điện thoại:</b>
+                <span>090 xxx xxxx</span>
+                <span>123 abc xyzt</span>
+              </div>
           <hr>
+          <div class="post-body">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, enim cum illum molestiae iusto et odit sapiente assumenda minus velit quia sed exercitationem veniam optio dolorum dolor quam qui. Ut consequatur quam optio accusantium. Magni velit voluptatibus reprehenderit neque autem ipsam veritatis. Tempore, recusandae, inventore, cum fuga nihil eum obcaecati sint dignissimos nesciunt earum non corporis beatae temporibus nobis delectus tempora doloribus ipsam. Rerum, ab, officiis, sapiente minus quos natus velit id tenetur repellat accusamus dicta cupiditate impedit dolor odit commodi earum ipsum consectetur dolorem corporis voluptas reiciendis nostrum illum iure eaque culpa tempora facere quae autem molestias necessitatibus ea!
           </p>
-          
+            <img src="assets/img/post_img4.jpg" alt="photo">
+            <span>Một dòng chú thích abc xyz gì đó</span>
+          <p class="bold">Công tác giảng dạy</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ullam excepturi ipsum hic eius iusto maxime. Facere, odio architecto libero aliquam est voluptatum! Ducimus, blanditiis, necessitatibus, distinctio, natus libero iste praesentium repellat ipsam eveniet consequatur rerum tempore placeat enim tenetur eaque odio repellendus delectus! Nulla, sequi, officia nostrum fugiat magni aliquam ipsum at quis obcaecati molestias est quia cum harum expedita ut. Beatae modi officia nostrum nisi itaque laboriosam accusamus! Animi, odit, expedita culpa fuga officiis voluptatibus eos laboriosam esse enim tempora necessitatibus at facilis ea ipsa alias voluptate voluptates rerum ex aperiam dolorum labore earum consequuntur assumenda fugiat consequatur?
+          </p>
+            <img src="assets/img/post_img4.jpg" alt="photo">
+            <span>Dòng chú thích thứ 2</span>
+          <p class="bold">Kinh nghiệm</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos rerum similique quasi in ipsam minima eaque temporibus delectus mollitia necessitatibus esse omnis aperiam sit alias iure odit culpa facilis!
+          </p>
+          </div>
         </div>
         <div class="col-md-4">
           <div class="panel panel-primary">
@@ -144,26 +124,3 @@
     </div>
   </div>
   <!--/content-->
-
-
-	<!--footer-->
-  <div id="footer" class="navbar navbar-inverse navbar-static-bottom">
-      <div class="container">
-        <p class='copy-right'>&copy; Azeroz Nguyễn</p>
-        <strong>Công ty gia sư gì gì đó</strong>
-        <p>SĐT: 090 xxx xxxx</p>
-        <p>Địa chỉ: số 123 đường xyz p.a Q.b tp.C Việt Nam</p>
-      </div>
-    </div>
-    <!--/footer-->
-    <!--JavaScript-->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.js"></script>	
-    <script>
-      $(function() {
-        $('.carousel').carousel({interval: 2000});
-      });
-    </script>
-    <!--/JavaScript-->
-</body>
-</html>

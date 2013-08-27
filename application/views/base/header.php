@@ -15,14 +15,14 @@
 	<div id="nav" class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Trung tâm gia sư</a>
+          <a class="navbar-brand" href="../emotionless">Trung tâm gia sư</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><img class="home-img" src="assets/img/home.png" alt="Home"></a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-            <li><a href="register.html">Đăng ký</a></li>
+            <li class="active"><a href="../emotionless"><img class="home-img" src="assets/img/home.png" alt="Home"></a></li>
+            <li><a href="about">Giới thiệu</a></li>
+            <li><a href="contact">Liên hệ</a></li>
+            <li><a href="register">Đăng ký</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
               <ul class="dropdown-menu">
