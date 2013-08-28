@@ -87,6 +87,17 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos rerum similique quasi in ipsam minima eaque temporibus delectus mollitia necessitatibus esse omnis aperiam sit alias iure odit culpa facilis!
           </p>
           </div>
+          <div id="comments">
+            <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_shortname = 'azerozbyethostblog'; 
+                (function(){
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                 })();
+              </script>
+            </div>
         </div>
         <div class="col-md-4">
           <div class="panel panel-primary">
