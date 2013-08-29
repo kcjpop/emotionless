@@ -47,14 +47,14 @@
   <!--content-->
   <div id="content" class="container">
     <div class="row">
-            <form action="" class="form-signup">
+            <form action="register.php" method="POST" class="form-signup">
               <div class="col-md-6">
                 <h2 class="form-signup-heading">Đăng ký</h2>
                 <h4 class="form-panel-heading">Phần thông  tin bắt buộc</h4>
-                <input type="text" class="form-control top-input" placeholder="Tên đăng nhập" autofocus>
-                <input type="password" class="form-control" placeholder="Mật khẩu">
-                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
-                <input type="email" class="form-control" placeholder="E-mail">
+                <input type="text" class="form-control top-input" placeholder="Tên đăng nhập" autofocus name="username">
+                <input type="password" class="form-control" placeholder="Mật khẩu" name="password">
+                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" name="password-retype">
+                <input type="email" class="form-control" placeholder="E-mail" name="email">
                 <input type="text" class="form-control bottom-input" placeholder="Mã xác nhận">
                 <div class="validation container">
                   <span class="validation-area btn"></span>
