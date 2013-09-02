@@ -47,7 +47,7 @@
   <!--content-->
   <div id="content" class="container">
     <div class="row">
-            <form action="register.php" method="POST" class="form-signup">
+            <form action="<?php echo site_url('auth/register') ?>" method="POST" class="form-signup">
               <div class="col-md-6">
                 <h2 class="form-signup-heading">Đăng ký</h2>
                 <h4 class="form-panel-heading">Phần thông  tin bắt buộc</h4>
@@ -57,12 +57,12 @@
                 <input type="email" class="form-control" placeholder="E-mail" name="email">
                 <input type="text" class="form-control bottom-input" placeholder="Mã xác nhận">
                 <div class="validation container">
-                  <span class="validation-area btn"></span>
+                  <span class="validation-area btn" name="validation"></span>
                   <button class="validation-reset btn btn-primary">Reset</button>
                 </div>
                 <div class="submit-area">
                 <button class="btn btn-lg btn-success form-submit" type="submit">Đăng ký</button>
-                <button class="btn btn-lg btn-danger form-submit">Xóa</button>
+                <button class="btn btn-lg btn-danger">Xóa</button>
                 </div>
               </div>
               <div class="col-md-6">
