@@ -1,28 +1,22 @@
 <?php 
-    class User_model extends CI_Model {
-        function __construct()
-        {
-            parent::__construct();
-        }
-        public function insert(){
-            $this->load->database();
-            $username=$this->input->post('username', TRUE);
-            $password=$this->input->post('password',TRUE);
-            $password_retype=$this->input->post('password-retype', TRUE);
-            $email=$this->input->post('email', TRUE);
-            if ($username && $password && $password_retype && $email){
-                if (strlen($username)>=5){
-                    if (strlen($password)>=6){
-                        if ($password==$password_retype){
-                        $this->db->insert('users', array('username'=>$username, 'password'=>md5($password),'email'=>$email)) or die('cannot query!');
-                        }
-                    else echo 'pwd doesn\'t match';
-                    }
-                    else echo 'pwd too short!';
-                }
-                else echo 'username too short!';
-            }
-            else echo 'form fill in wrong';
-        }
-    }
-?>
+class User_model extends CI_Model
+{
+	protected $table = 'users';
+
+	public function __construct()
+	{
+		// Database is already loaded in all model classes
+		parent::__construct();
+	}
+
+	/**
+	 * Insert new record to database
+	 *
+	 * @return array
+	 */
+	public function insert($data)
+	{
+		// Simple, huh?
+		$this->db->insert($this->table, $data);
+	}
+}
