@@ -10,5 +10,7 @@ class Migrate extends CI_Controller
 			show_error($this->migration->error_string());
 		}
 		echo 'Current version: ' . $this->migration->current();
+		echo '<br />';
+		echo 'Latest version: ' . $this->migration->latest();
 	}
 }
