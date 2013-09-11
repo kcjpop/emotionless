@@ -58,11 +58,11 @@
                 <input type="text" class="form-control bottom-input" placeholder="Mã xác nhận">
                 <div class="validation container">
                   <span class="validation-area btn" name="validation"></span>
-                  <button class="validation-reset btn btn-primary">Reset</button>
+                  <button class="validation-reset btn btn-primary" type="button">Reset</button>
                 </div>
                 <div class="submit-area">
-                <button class="btn btn-lg btn-success form-submit" type="submit">Đăng ký</button>
-                <button class="btn btn-lg btn-danger">Xóa</button>
+                <button class="btn btn-lg btn-success form-submit" type="submit" name="submit">Đăng ký</button>
+                <button class="btn btn-lg btn-danger" type="button">Xóa</button>
                 </div>
               </div>
               <div class="col-md-6">

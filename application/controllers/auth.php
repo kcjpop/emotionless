@@ -11,32 +11,31 @@ class Auth extends CI_Controller
 		$this->form_validation->set_rules(
 			'username',
 			'Username',
-			'required|trim|xss_clean'
+			'required|min_length[5]|max_length[16]|is_unique[users.username]|trim|xss_clean'
 		);
 		$this->form_validation->set_rules(
 			'password',
 			'Password',
-			'required|trim|xss_clean'
+			'required|min_length[6]|max_length[16]|matches[password-retype]|trim|xss_clean|md5|'
 		);
 		$this->form_validation->set_rules(
 			'password-retype',
 			'Confirm password',
-			'required|trim|xss_clean|matches[password]'
+			'required|trim|xss_clean'
 		);
 		$this->form_validation->set_rules(
 			'email',
 			'Email',
-			'required|valid_email|trim|xss_clean'
+			'required|valid_email|is_unique[users.email]|trim|xss_clean'
 		);
-
+		
 		if ($this->form_validation->run() !== FALSE)
 		{
 			$this->load->model('user_model');
 			// Collect input data and insert into database
 			$this->user_model->insert(array(
-				'username'        => $this->input->post('username', TRUE),
+				'username'        => $this->input->post('username', TRUE),	
 				'password'        => $this->input->post('password',TRUE),
-				'password_retype' => $this->input->post('password-retype', TRUE),
 				'email'           => $this->input->post('email', TRUE)
 			));
 

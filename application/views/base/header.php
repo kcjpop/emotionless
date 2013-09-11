@@ -37,7 +37,8 @@
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-right">
+
+          <form class="navbar-form navbar-right" method="POST" action="<?php echo site_url('login') ?>">
             <div class="form-group">
               <input type="text" placeholder="Tên người dùng" class="form-control">
             </div>
