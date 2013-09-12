@@ -37,16 +37,36 @@
               </ul>
             </li>
           </ul>
-
-          <form class="navbar-form navbar-right" method="POST" action="<?php echo site_url('login') ?>">
-            <div class="form-group">
-              <input type="text" placeholder="Tên người dùng" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Mật khẩu" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Đăng nhập</button>
-          </form>
+          <?php 
+            if ($this->session->userdata('logged_in')){
+              $session_data=$this->session->userdata('logged_in');
+              $username=$session_data['username'];
+          ?>
+              <div id="user-panel" class="container pull-right">
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a>Xin chào, <?php echo $username ?></a></li>
+                    <li><a href="register">Hồ sơ</a></li>
+                    <li><a href="auth/logout">Đăng xuất</a></li>
+                  </ul>
+                </div>
+              </div>
+          <?php    
+            }
+          else{
+            ?>
+            <form class="navbar-form navbar-right" method="POST" action  ="<?php echo site_url('login') ?>">
+              <div class="form-group">
+                <input type="text" name="username" placeholder="Tên người dùng" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" placeholder="Mật khẩu" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-success">Đăng nhập</button>
+            </form>
+            <?php
+              }
+            ?>
         </div><!--/.navbar-collapse -->
       </div>
     </div>

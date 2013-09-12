@@ -50,6 +50,9 @@ class Auth extends CI_Controller
 			// @todo: Display error message in the form
 			echo validation_errors();
 		}
-
+	}
+	public function logout(){
+		$this->session->unset_userdata('logged_in');
+		redirect(site_url(),'refresh');
 	}
 }

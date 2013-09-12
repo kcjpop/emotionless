@@ -21,7 +21,7 @@ Class Login extends CI_Controller{
 			redirect(site_url());
 		}
 		else{
-			redirect('home','refresh');
+			redirect(site_url(),'refresh');
 		}
 	}
 	public function dbCheck($password){
