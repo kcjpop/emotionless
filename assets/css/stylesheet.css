@@ -29,6 +29,14 @@ body{
   margin-right: -25px;
 }
 
+#user-panel{
+  padding-right: 0px;
+}
+
+#user-panel .navbar-collapse{
+  padding-right: 0px;
+}
+
 .carousel {
   margin-top: -20px;
   margin-bottom: 30px;
@@ -42,7 +50,7 @@ body{
   height: 250px;
   background-color: #777;
 }
-.carousel-inner > .item > img {
+.carousel-inner > .item > span {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,9 +58,9 @@ body{
   height: 500px;
 }
 
-.carousel-control img{
-  margin-top: 100px;
+.carousel-control span{
   width: 12.5%;
+  margin-top: -20px;
 }
 
 #portfolio{
@@ -145,10 +153,6 @@ hr{
   padding: 20px;
   margin-bottom: 0px !important;
   margin-top: 20px;
-}
-
-.home-img{
-  width: 16px
 }
 
 .photo-container{
@@ -279,4 +283,8 @@ hr{
 
 #portfolio p{
   text-align: justify;
+}
+
+.rmb-me{
+  width: 50px;
 }
