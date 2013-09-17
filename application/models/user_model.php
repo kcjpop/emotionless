@@ -40,6 +40,10 @@ class User_model extends CI_Model
 		}
 	}
 
+	public function is_logged_in(){
+		
+	}
+
 	/**
 	 * Get a user by his/her ID
 	 *

@@ -15,8 +15,15 @@ Class Login extends CI_Controller{
 		$this->form_validation->set_rules(
 			'password',
 			'Password',
-			'required|trim|xss_clean|callback_dbCheck'
+			'required|trim|xss_clean'
 		);
+		$username=$this->input->post('username');
+		$password=$this->input->post('password');
+		if ($this->input->post('rmb-me')){
+			$this->cookie();
+		}
+		//die();
+		$this->dbCheck($username, $password);
 		if ($this->form_validation->run()==FALSE){
 			redirect(site_url());
 		}
@@ -24,8 +31,7 @@ Class Login extends CI_Controller{
 			redirect(site_url(),'refresh');
 		}
 	}
-	public function dbCheck($password){
-		$username=$this->input->post('username');
+	public function dbCheck($username, $password){
 		$result=$this->user_model->login($username, $password);
 		if ($result){
 			$sess_array=array();
@@ -42,5 +48,19 @@ Class Login extends CI_Controller{
 			$this->form_validation->set_message('dbCheck', 'Invalid username or password');
 			return false;
 		}
+	}
+	public function cookie(){
+		$cookie_username=array(
+			'name'=>'username',
+			'value'=>$this->input->post('username'),
+			'expire'=>'10'
+			);
+		$cookie_password=array(
+			'name'=>'password',
+			'value'=>md5($this->input->post('password')),
+			'expire'=>'10'
+			);
+		$this->input->set_cookie($cookie_username);
+		$this->input->set_cookie($cookie_password);
 	}
 }

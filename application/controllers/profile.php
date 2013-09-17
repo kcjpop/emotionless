@@ -9,4 +9,19 @@ class Profile extends CI_Controller{
 		$this->load->view('profile');
 		$this->load->view('base/footer');
 	}
+	public function pwdChange(){
+		$this->load->view('base/header');
+		$this->load->view('pwdChange');
+		$this->load->view('base/footer');	
+	}
+	public function infoChange(){
+		$this->load->view('base/header');
+		$this->load->view('infoChange');
+		$this->load->view('base/footer');
+	}
+	public function avatarChange(){
+		$this->load->view('base/header');
+		$this->load->view('avatarChange');
+		$this->load->view('base/footer');
+	}
 }

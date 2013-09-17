@@ -1,26 +1,36 @@
-<link rel="stylesheet" href="assets/css/register.css">
-  <div id="content" class="container">
-    <div class="row">
-            <form action="<?php echo site_url('auth/register') ?>" method="POST" class="form-signup">
-              <div class="col-md-6">
-                <h2 class="form-signup-heading">Đăng ký</h2>
-                <h4 class="form-panel-heading">Phần thông  tin bắt buộc</h4>
-                <input type="text" class="form-control top-input" placeholder="Tên đăng nhập" autofocus name="username">
-                <input type="password" class="form-control" placeholder="Mật khẩu" name="password">
-                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" name="password-retype">
-                <input type="email" class="form-control" placeholder="E-mail" name="email">
-                <input type="text" class="form-control bottom-input" placeholder="Mã xác nhận">
-                <div class="validation container">
-                  <span class="validation-area btn" name="validation"></span>
-                  <button class="validation-reset btn btn-primary" type="button">Reset</button>
-                </div>
-                <div class="submit-area">
-                <button class="btn btn-lg btn-success form-submit" type="submit" name="submit">Đăng ký</button>
-                <button class="btn btn-lg btn-danger" type="button">Xóa</button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <h4 class="form-panel-heading form-right">Phần thông tin cá nhân</h4>
+<link rel="stylesheet" href="../assets/css/register.css">
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <div id="profile" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Thông tin cá nhân</h3>
+            </div>
+            <div class="panel-body">
+              <a href="profile/pwdChange">Đổi mật khẩu</a>
+            </div>
+            <div class="panel-body">
+              <a href="#">Hình đại diện</a>
+            </div>
+            <div class="panel-body">
+              <a href="#">Thông tin cá nhân</a>
+            </div>
+            <div class="panel-heading panel-border-fix">
+              <h3 class="panel-title">Tùy chỉnh</h3>
+            </div>
+            <div class="panel-body">
+              <a href="#">Tài khoản</a>
+            </div>
+            <div class="panel-body panel-last">
+              <a href="#">Bảo mật</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <form action="" method="POST" class="form-signup pull-top">
+            <h4 class="form-panel-heading form-right">Phần thông tin cá nhân</h4>
                 <input type="text" class="form-control top-input" placeholder="Họ và tên">
                 <input type="text" class="form-control" placeholder="Nơi học tập - công tác">
                 <input type="text" class="form-control" placeholder="Địa chỉ">
@@ -155,8 +165,7 @@
                     </div>
                 </div>
                 <textarea class="form-control bottom-input" placeholder="Ghi chú thêm" cols="30" rows="5"></textarea>
-              </div>
-            </form>
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
-  <!--/content-->

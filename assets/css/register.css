@@ -152,3 +152,11 @@
 .pull-top{
   margin-top: -70px;
 }
+
+.form-small{
+  width: 600px;
+}
+
+.form-small button{
+  margin-top: 10px;
+}

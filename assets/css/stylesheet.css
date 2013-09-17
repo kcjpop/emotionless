@@ -288,3 +288,7 @@ hr{
 .rmb-me{
   width: 50px;
 }
+
+.panel-border-fix{
+  border-radius: 0;
+}

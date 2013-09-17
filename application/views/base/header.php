@@ -34,15 +34,15 @@
               </ul>
             </li>
           </ul>
-          <?php 
+          <?php
             if ($this->session->userdata('logged_in')){
               $session_data=$this->session->userdata('logged_in');
-              $username=$session_data['username'];
+              $data_username=$session_data['username'];
           ?>
               <div id="user-panel" class="container pull-right">
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li><a>Xin chào, <?php echo $username ?></a></li>
+                    <li><a>Xin chào, <?php echo $data_username ?></a></li>
                     <li><a href="profile"><span class="glyphicon glyphicon-user"></span></a></li>
                     <li><a href="auth/logout"><span class="glyphicon glyphicon-off"></span></a></li>
                   </ul>
@@ -63,7 +63,7 @@
               <div class="form-group">
                 <div class="input-group rmb-me">
                   <span class="input-group-addon">
-                    <input type="checkbox" class="checkbox-addon">
+                    <input type="checkbox" name="rmb-me" class="checkbox-addon">
                   </span>
                   <button class="btn btn-default form-control" type="button"><span class="glyphicon glyphicon-floppy-save"></span></button>
                 </div>
