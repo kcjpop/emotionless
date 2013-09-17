@@ -15,9 +15,9 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="">Setting</a></li>
-				<li><a href="">User</a></li>
-				<li><a href="">Application</a></li>
+				<li><a href="<?php echo admin_url('user') ?>">User</a></li>
+				<li><a href="<?php echo admin_url('news') ?>">News</a></li>
+				<li><a href="<?php echo admin_url('setting') ?>">Setting</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo site_url() ?>" target="_blank">Homepage</a></li>
