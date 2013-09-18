@@ -29,13 +29,13 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, enim cum illum molestiae iusto et odit sapiente assumenda minus velit quia sed exercitationem veniam optio dolorum dolor quam qui. Ut consequatur quam optio accusantium. Magni velit voluptatibus reprehenderit neque autem ipsam veritatis. Tempore, recusandae, inventore, cum fuga nihil eum obcaecati sint dignissimos nesciunt earum non corporis beatae temporibus nobis delectus tempora doloribus ipsam. Rerum, ab, officiis, sapiente minus quos natus velit id tenetur repellat accusamus dicta cupiditate impedit dolor odit commodi earum ipsum consectetur dolorem corporis voluptas reiciendis nostrum illum iure eaque culpa tempora facere quae autem molestias necessitatibus ea!
           </p>
-            <img src="assets/img/post_img4.jpg" alt="photo">
+            <img src="<?php echo site_url('assets/img/post_img4.jpg') ?>" alt="photo">
             <span>Một dòng chú thích abc xyz gì đó</span>
           <p class="bold">Công tác giảng dạy</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ullam excepturi ipsum hic eius iusto maxime. Facere, odio architecto libero aliquam est voluptatum! Ducimus, blanditiis, necessitatibus, distinctio, natus libero iste praesentium repellat ipsam eveniet consequatur rerum tempore placeat enim tenetur eaque odio repellendus delectus! Nulla, sequi, officia nostrum fugiat magni aliquam ipsum at quis obcaecati molestias est quia cum harum expedita ut. Beatae modi officia nostrum nisi itaque laboriosam accusamus! Animi, odit, expedita culpa fuga officiis voluptatibus eos laboriosam esse enim tempora necessitatibus at facilis ea ipsa alias voluptate voluptates rerum ex aperiam dolorum labore earum consequuntur assumenda fugiat consequatur?
           </p>
-            <img src="assets/img/post_img4.jpg" alt="photo">
+            <img src="<?php echo site_url('assets/img/post_img4.jpg') ?>" alt="photo">
             <span>Dòng chú thích thứ 2</span>
           <p class="bold">Kinh nghiệm</p>
           <p>

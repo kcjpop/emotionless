@@ -22,7 +22,6 @@ Class Login extends CI_Controller{
 		if ($this->input->post('rmb-me')){
 			$this->cookie();
 		}
-		//die();
 		$this->dbCheck($username, $password);
 		if ($this->form_validation->run()==FALSE){
 			redirect(site_url());
@@ -53,14 +52,20 @@ Class Login extends CI_Controller{
 		$cookie_username=array(
 			'name'=>'username',
 			'value'=>$this->input->post('username'),
-			'expire'=>'10'
+			'expire'=>'30'
 			);
 		$cookie_password=array(
 			'name'=>'password',
 			'value'=>md5($this->input->post('password')),
-			'expire'=>'10'
+			'expire'=>'30'
+			);
+		$cookie_rmb_me=array(
+			'name'=>'rmb_me',
+			'value'=>'true',
+			'expire'=>'30'
 			);
 		$this->input->set_cookie($cookie_username);
 		$this->input->set_cookie($cookie_password);
+		$this->input->set_cookie($cookie_rmb_me);
 	}
 }

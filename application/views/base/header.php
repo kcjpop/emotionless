@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trang chủ</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/stylesheet.css">
+	<link rel="stylesheet" href="<?php echo site_url('assets/css/bootstrap.css') ?>">
+	<link rel="stylesheet" href="<?php echo site_url('assets/css/stylesheet.css') ?>">
+  <link rel="stylesheet" href="<?php echo site_url('assets/css/register.css') ?>">
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,9 +18,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?php echo site_url() ?>"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li><a href="about">Giới thiệu</a></li>
-            <li><a href="contact">Liên hệ</a></li>
-            <li><a href="register">Đăng ký</a></li>
+            <li><a href="<?php echo site_url('about') ?>">Giới thiệu</a></li>
+            <li><a href="<?php echo site_url('contact') ?>">Liên hệ</a></li>
+            <li><a href="<?php echo site_url('register') ?>">Đăng ký</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -43,8 +44,8 @@
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
                     <li><a>Xin chào, <?php echo $data_username ?></a></li>
-                    <li><a href="profile"><span class="glyphicon glyphicon-user"></span></a></li>
-                    <li><a href="auth/logout"><span class="glyphicon glyphicon-off"></span></a></li>
+                    <li><a href="<?php echo site_url('profile') ?>"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <li><a href="<?php echo site_url('auth/logout') ?>"><span class="glyphicon glyphicon-off"></span></a></li>
                   </ul>
                 </div>
               </div>
@@ -91,7 +92,7 @@
             <div class="carousel-caption">
               <h1>Một cái slider chạy linh tinh 1</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, suscipit, sapiente quaerat molestias nobis ad eligendi explicabo adipisci omnis accusantium. Explicabo cumque quae fuga labore alias quod inventore architecto debitis.</p>
-              <p><a class="btn btn-large btn-primary" href="register">Đăng ký làm gia sư ngay!</a></p>
+              <p><a class="btn btn-large btn-primary" href="<?php echo site_url('register') ?>">Đăng ký làm gia sư ngay!</a></p>
             </div>
           </div>
         </div>

@@ -10,14 +10,15 @@
     <!--/footer-->
 
     <!--JavaScript-->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.js"></script>  
+    <script src="<?php echo site_url('assets/js/jquery.js') ?>"></script>
+    <script src="<?php echo site_url('assets/js/bootstrap.js') ?>"></script>  
+    <script src="<?php echo site_url('assets/js/register.js') ?>"></script>
     <script>
       $(function() {
         $('.carousel').carousel({interval: 2000});
       });
     </script>
-    <script src="assets/js/register.js"></script>
+    
     <!--/JavaScript-->
 </body>
 </html>

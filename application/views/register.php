@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="assets/css/register.css">
   <div id="content" class="container">
     <div class="row">
             <form action="<?php echo site_url('auth/register') ?>" method="POST" class="form-signup">
