@@ -10,7 +10,7 @@
 	<nav class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Eggz Macaron Admin</a>
+			<a class="navbar-brand" href="<?php echo admin_url() ?>">Admin Area</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">

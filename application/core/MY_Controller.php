@@ -2,6 +2,9 @@
 
 class MY_Controller extends CI_Controller
 {
+	protected $base_header = 'base/header';
+	protected $base_footer = 'base/footer';
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -18,9 +21,9 @@ class MY_Controller extends CI_Controller
 	 */
 	protected function render($view_name, $data = array(), $return = FALSE)
 	{
-		$view  = $this->load->view('base/header', NULL, TRUE);
+		$view  = $this->load->view($this->base_header, NULL, TRUE);
 		$view .= $this->load->view($view_name, $data, TRUE);
-		$view .= $this->load->view('base/footer', NULL, TRUE);
+		$view .= $this->load->view($this->base_footer, NULL, TRUE);
 		
 		if ($return === TRUE)
 		{
@@ -41,5 +44,8 @@ class Admin_Controller extends MY_Controller
 	public function __construct()
 	{
 		parent::__construct();
+
+		$this->base_header = 'base/admin_header';
+		$this->base_footer = 'base/admin_footer';
 	}
 }
