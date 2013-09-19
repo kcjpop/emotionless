@@ -6,6 +6,28 @@ class MY_Controller extends CI_Controller
 	{
 		parent::__construct();
 	}
+
+	/**
+	 * Render the base view
+	 *
+	 * @param  string  $view_name 
+	 * @param  array   $data      
+	 * @param  boolean $return    
+	 *
+	 * @return string
+	 */
+	protected function render($view_name, $data = array(), $return = FALSE)
+	{
+		$view  = $this->load->view('base/header', NULL, TRUE);
+		$view .= $this->load->view($view_name, $data, TRUE);
+		$view .= $this->load->view('base/footer', NULL, TRUE);
+		
+		if ($return === TRUE)
+		{
+			return $view;
+		}
+		echo $view;
+	}
 }
 
 /**
