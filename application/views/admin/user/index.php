@@ -4,7 +4,7 @@
 		<tr>
 			<th>Username</th>
 			<th>Email</th>
-			<th>Join</th>
+			<th>Info</th>
 			<th>Actions</th>
 		</tr>
 	</thead>
@@ -15,7 +15,7 @@
 			<td><?php echo $user['email'] ?></td>
 			<td></td>
 			<td>
-				<a href="<?php echo admin_url('user/remove/'.$user['id']) ?>" class="btn btn-danger btn-sm"><i class="icon-remove"></i> Delete</a>
+				<a href="<?php echo admin_url('user/delete/'.$user['id']) ?>" class="btn btn-danger btn-sm"><i class="icon-remove"></i> Delete</a>
 			</td>
 		</tr>
 <?php endforeach; ?>

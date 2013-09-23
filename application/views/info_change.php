@@ -26,14 +26,14 @@
           </div>
         </div>
         <div class="col-md-8">
-          <form action="" method="POST" class="form-signup pull-top">
+          <form action="<?php echo site_url('auth/update_info') ?>" method="post" class="form-signup pull-top">
             <h4 class="form-panel-heading form-right">Phần thông tin cá nhân</h4>
-                <input type="text" class="form-control top-input" placeholder="Họ và tên">
-                <input type="text" class="form-control" placeholder="Nơi học tập - công tác">
-                <input type="text" class="form-control" placeholder="Địa chỉ">
-                <input type="text" class="form-control" placeholder="Số điện thoại">
+                <input name="fullname" type="text" class="form-control top-input" placeholder="Họ và tên">
+                <input name="workplace" type="text" class="form-control" placeholder="Nơi học tập - công tác">
+                <input name="address" type="text" class="form-control" placeholder="Địa chỉ">
+                <input name="tel" type="text" class="form-control" placeholder="Số điện thoại">
                 <div class="form-control">
-                  <select class="form-control dob">
+                  <select name="dob_day"class="form-control dob">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -66,7 +66,7 @@
                     <option>30</option>
                     <option>31</option>
                   </select>
-                  <select class="form-control dob">
+                  <select name="dob_month" class="form-control dob">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -80,7 +80,7 @@
                     <option>11</option>
                     <option>12</option>
                   </select>
-                  <select class="form-control dob">
+                  <select name="dob_year" class="form-control dob">
                     <option>1961</option>
                     <option>1962</option>
                     <option>1963</option>
@@ -122,7 +122,7 @@
                     <option>1999</option>
                     <option>2000</option>
                   </select>
-                  <select class="form-control sex">
+                  <select name="sex" class="form-control sex">
                     <option>Nam</option>
                     <option>Nữ</option>
                   </select>
@@ -162,6 +162,7 @@
                     </div>
                 </div>
                 <textarea class="form-control bottom-input" placeholder="Ghi chú thêm" cols="30" rows="5"></textarea>
+                <button type="submit" class="btn btn-primary form-submit">Xác nhận</button>
           </form>
         </div>
       </div>

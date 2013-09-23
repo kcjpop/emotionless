@@ -96,7 +96,7 @@
 }
 
 .form-submit{
-  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .dob{
@@ -155,8 +155,4 @@
 
 .form-small{
   width: 600px;
-}
-
-.form-small button{
-  margin-top: 10px;
 }

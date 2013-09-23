@@ -17,16 +17,16 @@ class Index extends CI_Controller
 			$password=$this->input->cookie('password');
 			$result=$this->user_model->login($username, $password);
 			if ($result){
-			$sess_array=array();
-			foreach($result as $row){
-				$sess_array=array(
-					'id'=>$row->id,
-					'username'=>$row->username
-				);
-				$this->session->set_userdata('logged_in', $sess_array);
+				$sess_array=array();
+				foreach($result as $row){
+					$sess_array=array(
+						'id'=>$row->id,
+						'username'=>$row->username
+					);
+					$this->session->set_userdata('logged_in', $sess_array);
+				}
+				return true;
 			}
-			return true;
-		}
 		}
 
 		$this->load->view('base/header');

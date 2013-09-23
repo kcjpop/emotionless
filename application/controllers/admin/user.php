@@ -14,7 +14,12 @@ class User extends Admin_Controller
 
 		$this->load->model('user_model');
 		$data['users'] = $this->user_model->gets();
-
 		$this->render('admin/user/index', $data);
+	}
+	public function delete($id)
+	{
+		$this->load->model('user_model');
+		$this->user_model->delete($id);
+		redirect(admin_url('user'),'refresh');
 	}
 }

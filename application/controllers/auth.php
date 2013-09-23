@@ -51,6 +51,32 @@ class Auth extends CI_Controller
 			echo validation_errors();
 		}
 	}
+	public function update_info()
+	{
+		$this->load->library('form_validation');
+		if ($this->form_validation->run() !== FALSE)
+		{
+			$this->load->model('user_info_model');
+			$this->user_info_model->insert(array(
+				'fullname'			=> $this->input->post('fullname', TRUE),	
+				'workplace'			=> $this->input->post('workplace',TRUE),
+				'address'   		=> $this->input->post('address', TRUE),
+				'tel'				=> $this->input->post('tel',TRUE),
+				'sex'				=> $this->input->post('sex',TRUE)
+			));
+			redirect(site_url('auth/success'));
+		}
+		else
+		{
+			// Display error messages
+			// @todo: Display error message in the form
+			echo validation_errors();
+		}
+	}
+	public function success()
+	{
+		$this->load->view('success');
+	}
 	public function logout(){
 		$this->session->unset_userdata('logged_in');
 		redirect(site_url(),'refresh');

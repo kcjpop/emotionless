@@ -14,7 +14,7 @@
                   <button class="validation-reset btn btn-primary" type="button">Reset</button>
                 </div>
                 <div class="submit-area">
-                <button class="btn btn-lg btn-success form-submit" type="submit" name="submit">Đăng ký</button>
+                <button class="btn btn-lg btn-success" type="submit" name="submit">Đăng ký</button>
                 <button class="btn btn-lg btn-danger" type="button">Xóa</button>
                 </div>
               </div>

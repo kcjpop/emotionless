@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title>Admin Area</title>
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo site_url('assets/css/bootstrap.css') ?>">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 </head>
 <body>
