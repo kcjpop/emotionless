@@ -1,14 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Article_model extends CI_Model
+class Article_model extends MY_Model
 {
 	protected $table = 'articles';
-
-	public function __construct()
-	{
-		parent::__construct();
-		$this->load->database();
-	}
 
 	public function insert($data)
 	{
@@ -25,12 +19,6 @@ class Article_model extends CI_Model
 			$data['modified'] = $now->format(DateTime::ISO8601);
 		}		
 
-		$this->db->insert($this->table, $data);
-		return $this->db->insert_id();
-	}
-
-	public function gets()
-	{
-		return $this->db->get($this->table)->result_array();
+		return parent::insert($data);
 	}
 }
