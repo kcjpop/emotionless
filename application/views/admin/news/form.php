@@ -12,7 +12,7 @@
 
 <div class="form-group">
 	<label>Content*</label>
-	<?php echo form_textarea('content', '', 'class="form-control"') ?>
+	<?php echo form_textarea('content', '', 'class="form-control rich"') ?>
 </div>
 
 <button type="submit" class="btn btn-primary">Save</button>
