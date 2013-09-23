@@ -29,4 +29,8 @@ class Article_model extends CI_Model
 		return $this->db->insert_id();
 	}
 
+	public function gets()
+	{
+		return $this->db->get($this->table)->result_array();
+	}
 }

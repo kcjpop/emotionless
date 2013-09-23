@@ -2,9 +2,26 @@
 
 class News extends Admin_Controller
 {
+	public function __construct()
+	{
+		parent::__construct();
+		// Since we are using this model frequently, put it here for autoloading
+		$this->load->model('article_model');
+	}
+
+	/**
+	 * Dispaly all articles in database
+	 *
+	 * @return void
+	 */
 	public function index()
 	{
-		$this->render('admin/news/index');
+		$data = array();
+
+		// Display all articles in database
+		$data['items'] = $this->article_model->gets();
+
+		$this->render('admin/news/index', $data);
 	}
 
 	public function form()
@@ -31,7 +48,6 @@ class News extends Admin_Controller
 			if ($this->form_validation->run() === TRUE)
 			{
 				// Data is OK
-				$this->load->model('article_model');
 				$this->article_model->insert(array(
 					'title'   => $this->input->post('title'),
 					'content' => $this->input->post('content')
