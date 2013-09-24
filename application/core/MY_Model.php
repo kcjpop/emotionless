@@ -28,6 +28,14 @@ class MY_Model extends CI_Model
         return $this->db->insert_id();
     }
 
+
+    public function get_id()
+    {
+        $session=$this->session->userdata('logged_in');
+        $user_id=$session['id'];
+        return $user_id;
+    }
+
     /**
      * Get a user by his/her ID
      *

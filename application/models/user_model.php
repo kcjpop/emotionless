@@ -22,7 +22,7 @@ class User_model extends MY_Model
 			return false;
 		}
 	}
-
+	
 	public function is_logged_in()
 	{
 		if ($this->session->userdata('logged_in')){
