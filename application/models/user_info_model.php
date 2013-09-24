@@ -73,4 +73,10 @@ class User_info_model extends CI_Model
 		return $this->db->delete($this->table);
 
 	}
+	public function get_id()
+	{
+		$session=$this->session->userdata('logged_in');
+		$user_id=$session['id'];
+		return $user_id;
+	}
 }

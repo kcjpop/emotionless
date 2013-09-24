@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Index extends CI_Controller
+class Index extends MY_Controller
 {
 	public function __construct()
 	{
@@ -28,10 +28,7 @@ class Index extends CI_Controller
 				return true;
 			}
 		}
-
-		$this->load->view('base/header');
-		$this->load->view('index');
-		$this->load->view('base/footer');
+		$this->render('welcome/index');
 	}
 }
 

@@ -3,19 +3,19 @@
         <div class="col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Thông tin cá nhân</h3>
+              <h3 class="panel-title"><a href="<?php echo site_url('profile') ?>">Hồ sơ</a></h3>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/pwd_change') ?>">Đổi mật khẩu</a>
+              <a href="<?php echo site_url('profile/update_pwd') ?>">Đổi mật khẩu</a>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/avatar_change') ?>">Hình đại diện</a>
+              <a href="<?php echo site_url('profile/update_avatar') ?>">Hình đại diện</a>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/info_change') ?>">Thông tin cá nhân</a>
+              <a href="<?php echo site_url('profile/update_info') ?>">Thông tin cá nhân</a>
             </div>
             <div class="panel-heading panel-border-fix">
-              <h3 class="panel-title">Tùy chỉnh</h3>
+              <h3 class="panel-title"><a href="<?php echo site_url('profile') ?>">Tủy chỉnh</a></h3>
             </div>
             <div class="panel-body">
               <a href="#">Tài khoản</a>
@@ -25,15 +25,15 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
-          <form action="<?php echo site_url('auth/update_info') ?>" method="post" class="form-signup pull-top">
-            <h4 class="form-panel-heading form-right">Phần thông tin cá nhân</h4>
+        <div class="col-md-8 pull-top">
+          <h3>Thông tin cá nhân</h3>
+          <form action="<?php echo site_url('auth/update_info') ?>" method="post" class="form-signup form-fix">
                 <input name="fullname" type="text" class="form-control top-input" placeholder="Họ và tên">
                 <input name="workplace" type="text" class="form-control" placeholder="Nơi học tập - công tác">
                 <input name="address" type="text" class="form-control" placeholder="Địa chỉ">
                 <input name="tel" type="text" class="form-control" placeholder="Số điện thoại">
                 <div class="form-control">
-                  <select name="dob_day"class="form-control dob">
+                  <select name="dob_day"class="form-control dob dob-left">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -125,43 +125,100 @@
                   <select name="sex" class="form-control sex">
                     <option>Nam</option>
                     <option>Nữ</option>
+                    <option>Khác</option>
                   </select>
-                  <div class="tutor-info">
-                    <div class="tutor-majors">
+                  <div class="row">
+                    <div class="col-md-6 tutor-majors">
                       <label class="label-head">Môn dạy</label>
-                      <input type="checkbox">
-                      <label>Toán</label>
-                      <input type="checkbox">
-                      <label>Lý</label>
-                      <input type="checkbox">
-                      <label>Hóa</label>
-                      <input type="checkbox">
-                      <label>Văn</label>
-                      <input type="checkbox">
-                      <label>Anh</label>
-                      <input type="checkbox">
-                      <label>Sinh</label>
-                    </div>
-                    <div class="tutor-classes">
-                      <label>Lớp dạy</label>
-                      <select class="form-control" size="4" multiple>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                      </select>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <input name="major-math" type="checkbox" value="toán">
+                          <label>Toán</label>
+                        </div>
+                        <div class="row">
+                          <input name="major-physics" type="checkbox" value="lý">
+                          <label>Lý</label>
+                        </div>
+                        <div class="row">
+                          <input name="major-chemistry" type="checkbox" value="hóa">
+                          <label>Hóa</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <input name="major-literature" type="checkbox" value="văn">
+                          <label>Văn</label>
+                        </div>
+                        <div class="row">
+                          <input name="major-english" type="checkbox" value="anh">
+                          <label>Anh</label>
+                        </div>
+                        <div class="row">
+                          <input name="major-biology" type="checkbox" value="sinh">
+                          <label>Sinh</label>
+                        </div>
                       </div>
                     </div>
+                    <div class="col-md-6 tutor-level">
+                      <label class="label-head">Lớp dạy</label>
+                      <div class="col-md-4">
+                        <div class="row">
+                          <input type="checkbox" name="level-1" value="1">
+                          <label>1</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-2" value="2">
+                          <label>2</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-3" value="3">
+                          <label>3</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-4" value="4">
+                          <label>4</label>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row">
+                          <input type="checkbox" name="level-5" value="5">
+                          <label>5</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-6" value="6">
+                          <label>6</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-7" value="7">
+                          <label>7</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-8" value="8">
+                          <label>8</label>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row">
+                          <input type="checkbox" name="level-9" value="9">
+                          <label>9</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-10" value="10">
+                          <label>10</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-11" value="11">
+                          <label>11</label>
+                        </div>
+                        <div class="row">
+                          <input type="checkbox" name="level-12" value="12">
+                          <label>12</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <textarea class="form-control bottom-input" placeholder="Ghi chú thêm" cols="30" rows="5"></textarea>
+                <textarea name="note" class="form-control bottom-input" placeholder="Ghi chú thêm - không quá 150 kí tự" cols="30" rows="5"></textarea>
                 <button type="submit" class="btn btn-primary form-submit">Xác nhận</button>
           </form>
         </div>

@@ -38,12 +38,12 @@
           <?php
             if ($this->session->userdata('logged_in')){
               $session_data=$this->session->userdata('logged_in');
-              $data_username=$session_data['username'];
+              $user_username=$session_data['username'];
           ?>
               <div id="user-panel" class="container pull-right">
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li><a>Xin chào, <?php echo $data_username ?></a></li>
+                    <li><a>Xin chào, <?php echo $user_username ?></a></li>
                     <li><a href="<?php echo site_url('profile') ?>"><span class="glyphicon glyphicon-user"></span></a></li>
                     <li><a href="<?php echo site_url('auth/logout') ?>"><span class="glyphicon glyphicon-off"></span></a></li>
                   </ul>

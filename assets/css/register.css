@@ -103,56 +103,40 @@
   width: 32%;
 }
 
+.dob-left, .sex{
+  margin-left: 10px;
+}
+
 .sex{
   margin-top: 10px;
-  width: 98%;
+  width: 97%;
 }
 
-.tutor-info{
-  margin: 5px 0px;
+input[type='checkbox']{
+  margin-left: 10px;
 }
 
-.tutor-majors, .tutor-classes{
-  display: inline-block;
+.label-head{
+  display: block;
+  margin-top: 15px;
 }
 
-.tutor-majors{
-  width: 60%; 
-  padding-left: 5px;
-}
-
-.tutor-majors .label-head{
-  display: block; 
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.tutor-majors label{
-  width: 55px;
-  margin: 0 25px 10px 0;
-}
-
-.tutor-majors label, .tutor-classes label{
+.tutor-majors label, .tutor-level label{
   font-weight: normal;
 }
 
-.tutor-classes{
-  width: 34%;
-}
-
-.tutor-classes label{
-  margin-bottom: 10px;
-}
-
-.tutor-classes .form-control{
-  padding: 0px;
-  margin-top: -10px;
-}
-
 .pull-top{
-  margin-top: -70px;
+  margin-top: -20px;
 }
 
-.form-small{
-  width: 600px;
+.form-fix{
+  margin-top: -12px;
+}
+
+.description-area{
+  font-size: 16px;
+}
+
+.description-area-fix{
+  margin-top: 90px;
 }

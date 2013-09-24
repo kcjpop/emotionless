@@ -3,19 +3,19 @@
         <div class="col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Thông tin cá nhân</h3>
+              <h3 class="panel-title"><a href="<?php echo site_url('profile') ?>">Hồ sơ</a></h3>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/pwd_change') ?>">Đổi mật khẩu</a>
+              <a href="<?php echo site_url('profile/update_pwd') ?>">Đổi mật khẩu</a>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/avatar_change') ?>">Hình đại diện</a>
+              <a href="<?php echo site_url('profile/update_avatar') ?>">Hình đại diện</a>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/info_change') ?>">Thông tin cá nhân</a>
+              <a href="<?php echo site_url('profile/update_info') ?>">Thông tin cá nhân</a>
             </div>
             <div class="panel-heading panel-border-fix">
-              <h3 class="panel-title">Tùy chỉnh</h3>
+              <h3 class="panel-title"><a href="<?php echo site_url('profile') ?>">Tủy chỉnh</a></h3>
             </div>
             <div class="panel-body">
               <a href="#">Tài khoản</a>
@@ -25,12 +25,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">  
-          <h4 class="form-panel-heading">Ảnh đại diện</h4>
-          <div class="container small-form">
-            <input type="file" name="avatar">
-            
-          </div>
+        <div class="col-md-8 pull-top">  
+          <h3>Ảnh đại diện</h3>
+          
         </div>
       </div>
     </div>

@@ -2,10 +2,12 @@ body{
   background-color: #eee;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+  font-size: 16px;
 }
 
 .navbar{
   border-radius: 0;
+  font-size: 14px;
 }
 
 .navbar-inverse{
@@ -40,6 +42,7 @@ body{
 .carousel {
   margin-top: -20px;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .carousel-caption {
@@ -251,12 +254,20 @@ hr{
 .info-container b, .info-container span{
   display: block;
   padding: 0px 5px;
-  margin: 5px 0px;
+}
+
+.info-container b{
+  margin-top: 15px;
+}
+
+.info-container b:first-child{
+  margin-top: 0px;
 }
 
 .info-container span{
+  font-style: normal;
   padding-left: 15px;
-  color: #444;
+  color: #000;
 }
 
 .post-body p{

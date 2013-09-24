@@ -23,12 +23,20 @@ class User_model extends CI_Model
 	{
 		// Simple, huh?
 		$this->db->insert($this->table, $data);
+		return $this->db->insert_id();
+	}
+
+	public function get_id()
+	{
+		$session=$this->session->userdata('logged_in');
+		$user_id=$session['id'];
+		return $user_id;
 	}
 
 	public function login($username, $password)
 	{
 		$this->db->select('id, username, password');
-		$this->db->from('users');
+		$this->db->from($this->table);
 		$this->db->where('username', $username);
 		$this->db->where('password', md5($password));
 		$this->db->limit(1);

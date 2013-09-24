@@ -5,7 +5,6 @@ class Register extends MY_Controller
 {
 	public function index()
 	{
-
-		$this->render('register');
+		$this->render('register/index');
 	}
 }
