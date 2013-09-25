@@ -1,4 +1,4 @@
-   <div id="profile" class="container">
+<div id="profile" class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="panel panel-primary">
@@ -29,13 +29,13 @@
           </div>
         </div>
         <div class="col-md-8 pull-top">
-          <h3>Đổi mật khẩu</h3>
-          <form action="<?php echo site_url('auth/update_pwd') ?>" method="POST" class="form-signup form-fix">
-              <input type="password" name="password-old" placeholder="Mật khẩu hiện tại" class="form-control top-input">
-              <input type="password" name="password-new" placeholder="Mật khẩu mới" class="form-control">
-              <input type="password" name="password-new-retype" placeholder="Xác nhận mật khẩu" class="form-control bottom-input">
-              <button class="btn btn-primary form-submit" type="submit" name="submit">Xác nhận</button>
-          </form>
+          <h3>Gửi đăng ký</h3>
+          <div class="description-area">
+            <p>Lưu ý: chỉ có hồ sơ được điền đầy đủ tất cả các mục mới được xét duyệt để thông qua.</p>
+            <p>Khi hồ sơ của bạn được chúng tôi duyệt thành công sẽ có thông báo gửi về địa chỉ email của bạn.</p>
+            <p>Cảm ơn bạn đã hợp tác với trung tâm.</p>
+            <button type="submit" class="btn btn-lg btn-primary">Gửi</button>
+          </div>
         </div>
       </div>
     </div>

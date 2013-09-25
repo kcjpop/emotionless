@@ -112,19 +112,6 @@
   width: 97%;
 }
 
-.tutor-info input[type='checkbox']{
-  margin-left: 10px;
-}
-
-.label-head{
-  display: block;
-  margin-top: 15px;
-}
-
-.tutor-majors label, .tutor-level label{
-  font-weight: normal;
-}
-
 .pull-top{
   margin-top: -20px;
 }

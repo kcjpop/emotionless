@@ -1,2 +1,3 @@
-<p>You have successfully update your info!</p>
-<a href="<?php echo site_url('profile') ?>">Click here to go back</a>
+<meta charset="UTF-8">
+<p>Chúng tôi đã ghi lại thông tin của bạn!</p>
+<a href="<?php echo site_url('profile') ?>">Nhấn vào đây để quay trở lại</a>

@@ -14,6 +14,9 @@
             <div class="panel-body">
               <a href="<?php echo site_url('profile/update_info') ?>">Thông tin cá nhân</a>
             </div>
+            <div class="panel-body">
+              <a href="<?php echo site_url('profile/send_request') ?>">Đăng ký làm gia sư</a>
+            </div>
             <div class="panel-heading panel-border-fix">
               <a href="<?php echo site_url('profile') ?>"><h3 class="panel-title">Tủy chỉnh</h3></a>
             </div>

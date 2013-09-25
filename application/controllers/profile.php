@@ -27,4 +27,8 @@ class Profile extends MY_Controller
 	{
 		$this->render('profile/update_avatar');
 	}
+	public function send_request()
+	{
+		$this->render('profile/send_request');
+	}
 }
