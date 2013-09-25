@@ -3,7 +3,7 @@
         <div class="col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title"><a href="<?php echo site_url('profile') ?>">Hồ sơ</a></h3>
+              <a href="<?php echo site_url('profile') ?>"><h3 class="panel-title">Hồ sơ</h3></a>
             </div>
             <div class="panel-body">
               <a href="<?php echo site_url('profile/update_pwd') ?>">Đổi mật khẩu</a>
@@ -15,7 +15,7 @@
               <a href="<?php echo site_url('profile/update_info') ?>">Thông tin cá nhân</a>
             </div>
             <div class="panel-heading panel-border-fix">
-              <h3 class="panel-title"><a href="<?php echo site_url('profile') ?>">Tủy chỉnh</a></h3>
+              <a href="<?php echo site_url('profile') ?>"><h3 class="panel-title">Tủy chỉnh</h3></a>
             </div>
             <div class="panel-body">
               <a href="#">Tài khoản</a>

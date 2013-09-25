@@ -20,15 +20,12 @@ class News extends Admin_Controller
 
 		// Display all articles in database
 		$data['items'] = $this->article_model->gets();
-
 		$this->render('admin/news/index', $data);
 	}
 
 	public function form()
 	{
 		$data = array();
-		// Load the validation library
-		$this->load->library('form_validation');
 		// If users submit the form
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{
@@ -42,7 +39,7 @@ class News extends Admin_Controller
 			$this->form_validation->set_rules(
 				'content',
 				'Content',
-				'required|trim|xss_clear'
+				'required|trim|xss_clean'
 			);
 
 			if ($this->form_validation->run() === TRUE)
@@ -65,5 +62,41 @@ class News extends Admin_Controller
 
 		// Show the form to user
 		$this->render('admin/news/form', $data);
+	}
+	public function edit($id)
+	{
+		$data=array();
+		$data['id']=$id;
+		$this->form_validation->set_rules(
+			'title',
+			'Title',
+			'required|trim|xss_clean'
+		);
+
+		$this->form_validation->set_rules(
+			'content',
+			'Content',
+			'required|trim|xss_clean'
+		);
+
+		if ($this->form_validation->run() === TRUE)
+		{
+			$this->article_model->update(array(
+				'id'		=> $id,
+				'title'		=> $this->input->post('title'),
+				'content' 	=> $this->input->post('content')
+			));
+			redirect(admin_url('news'));
+		}
+		else
+		{
+			$data['validation_errors'] = validation_errors();
+		}
+		$this->render('admin/news/edit', $data);
+	}
+	public function delete($id)
+	{
+		$this->article_model->delete($id);
+		redirect(admin_url('news'),'refresh');
 	}
 }
