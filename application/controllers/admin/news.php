@@ -65,8 +65,9 @@ class News extends Admin_Controller
 	}
 	public function edit($id)
 	{
-		$data=array();
-		$data['id']=$id;
+		$data = array();
+		$data['id'] = $id;
+		$now = new DateTime();
 		$this->form_validation->set_rules(
 			'title',
 			'Title',
@@ -84,7 +85,8 @@ class News extends Admin_Controller
 			$this->article_model->update(array(
 				'id'		=> $id,
 				'title'		=> $this->input->post('title'),
-				'content' 	=> $this->input->post('content')
+				'content' 	=> $this->input->post('content'),
+				'modified'	=> $now->format(DateTime::ISO8601)
 			));
 			redirect(admin_url('news'));
 		}
