@@ -91,7 +91,7 @@ body{
   display: block;
 }
 
-.panel-last{
+.panel-body:last-child{
   border-bottom: none;
 }
 
@@ -205,4 +205,3 @@ hr{
 .row:last-child{
   border-bottom: none;
 }
-

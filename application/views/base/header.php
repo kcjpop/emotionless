@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Trang chủ</title>
+	<title>Trung tâm gia sư</title>
 	<link rel="stylesheet" href="<?php echo site_url('assets/css/bootstrap.css') ?>">
 	<link rel="stylesheet" href="<?php echo site_url('assets/css/stylesheet.css') ?>">
   <link rel="stylesheet" href="<?php echo site_url('assets/css/register.css') ?>">
@@ -24,14 +24,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="dropdown-header">Dịch vụ</li>
-                <li><a href="#">Tìm gia sư</a></li>
-                <li><a href="#">Đăng ký làm gia sư</a></li>
-                <li><a href="#">Các lớp hiện có</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Các lớp luyện thi</li>
-                <li><a href="#">LT THPT</a></li>
-                <li><a href="#">LTĐH</a></li>
+                <li><a href="<?php echo site_url('portfolio') ?>">Tìm gia sư</a></li>
+                <li><a href="<?php echo site_url('register') ?>">Đăng ký làm gia sư</a></li>
+                <li><a href="<?php echo site_url('post') ?>">Các lớp hiện có</a></li>
               </ul>
             </li>
           </ul>
@@ -55,7 +50,7 @@
             ?>
             <form class="navbar-form navbar-right" method="POST" action  ="<?php echo site_url('login') ?>">
               <div class="form-group">
-                <input type="text" name="username" placeholder="Tên người dùng" class="form-control">
+                <input type="text" name="username" placeholder="Tên đăng nhập" class="form-control">
               </div>
               <div class="form-group">
                 <input type="password" name="password" placeholder="Mật khẩu" class="form-control">
@@ -101,7 +96,7 @@
             <div class="carousel-caption">
               <h1>Một cái slider chạy linh tinh 2</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, suscipit, sapiente quaerat molestias nobis ad eligendi explicabo adipisci omnis accusantium. Explicabo cumque quae fuga labore alias quod inventore architecto debitis.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Các lớp hiện có</a></p>
+              <p><a class="btn btn-large btn-primary" href="<?php echo site_url('post') ?>">Các lớp hiện có</a></p>
             </div>
           </div>
         </div>
@@ -110,7 +105,7 @@
            <div class="carousel-caption">
               <h1>Một cái slider chạy linh tinh 3</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, suscipit, sapiente quaerat molestias nobis ad eligendi explicabo adipisci omnis accusantium. Explicabo cumque quae fuga labore alias quod inventore architecto debitis.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Tìm gia sư</a></p>
+              <p><a class="btn btn-large btn-primary" href="<?php echo site_url('portfolio') ?>">Tìm gia sư</a></p>
             </div>
           </div>
         </div>

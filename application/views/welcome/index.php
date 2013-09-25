@@ -29,13 +29,13 @@
   <div id="content" class="container">
     <div class="row">
         <div class="col-md-8 post">
-          <h4 class="post-heading"><?php echo $title ?></h4>
+          <h4 class="post-heading"><?php echo $top_post['title'] ?></h4>
           <span class='poster'>Ngừời viết: admin</span>
-          <span class="post-timer">Được đăng vào lúc: <?php echo $created->format('H:i:s d-m-Y') ?></span>
-          <span class="post-timer">Sửa lần cuối lúc: <?php echo $modified->format('H:i:s d-m-Y') ?>r</span>
+          <span class="post-timer">Được đăng vào lúc: <?php echo $top_post['created']->format('H:i:s d-m-Y') ?></span>
+          <span class="post-timer">Sửa lần cuối lúc: <?php echo $top_post['modified']->format('H:i:s d-m-Y') ?>r</span>
           <hr>
           <div class="content">
-            <?php echo $content ?>
+            <?php echo $top_post['content'] ?>
           </div>
           <div id="comments">
             <div id="disqus_thread"></div>
@@ -52,34 +52,13 @@
         <div class="col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Tìm gia sư theo môn</h3>
+              <a href="<?php echo site_url('post') ?>"><h3 class="panel-title">Danh sách lớp hiện có</h3></a>
             </div>
+            <?php for($i=0;$i<5;$i++){ ?>
             <div class="panel-body">
-              <a href="#">Toán</a>
+              <a href="#"><?php echo $recent_post[$i]['title'] ?></a>
             </div>
-            <div class="panel-body">
-              <a href="#">Hóa</a>
-            </div>
-            <div class="panel-body">
-              <a href="#">Anh</a>
-            </div>
-            <div class="panel-body">
-              <a href="#">Toán</a>
-            </div>
-            <div class="panel-body panel-last">
-              <a href="#">Lý</a>
-            </div>
-          </div>
-          <div class="panel panel-primary">
-           <div class="panel-heading">
-              <h3 class="panel-title">Tìm gia sư theo lớp</h3>
-            </div>
-            <div class="panel-body">
-              <a href="#">Luyện thi THPT</a>
-            </div>
-            <div class="panel-body panel-last">
-              <a href="#">Luyện thi Đại học - Cao đẳng</a>
-            </div>
+          <?php } ?>
           </div>
         </div>
     </div>

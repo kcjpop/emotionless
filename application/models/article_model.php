@@ -30,14 +30,11 @@ class Article_model extends MY_Model
 		$query=$this->db->get();
 		if ($query->num_rows()==1)
 		{
-			$data=$query->row();
-			return $data->id;
-		}
-		else
-		{
-			return false;
+			$data=$query->row_array();
+			return $data['id'];
 		}
 	}
+
 	public function get_top()
 	{
 		$this->db->select('title, content, created ,modified');
@@ -47,11 +44,16 @@ class Article_model extends MY_Model
 		$query=$this->db->get();
 		if ($query->num_rows()==1)
 		{
-			return $query->row();
+			return $query->row_array();
 		}
-		else
-		{
-			return false;
-		}
+	}
+
+	public function recent_post()
+	{
+		$this->db->order_by('id','desc');
+		$this->db->select('id, title');
+		$this->db->from($this->table);
+		$query=$this->db->get();
+		return $query->result_array();
 	}
 }

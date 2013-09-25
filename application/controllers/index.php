@@ -29,9 +29,11 @@ class Index extends MY_Controller
 				return true;
 			}
 		}
-		$data = $this->article_model->get_top();
-		$data->created = new DateTime($data->created);
-		$data->modified = new DateTime($data->modified);
+		$data=array();	
+		$data['recent_post'] = $this->article_model->recent_post();
+		$data['top_post'] = $this->article_model->get_top();
+		$data['top_post']['created'] = new DateTime($data['top_post']['created']);
+		$data['top_post']['modified'] = new DateTime($data['top_post']['modified']);
 		$this->render('welcome/index', $data);
 	}
 }
