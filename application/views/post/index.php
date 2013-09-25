@@ -16,7 +16,7 @@
             </div>
             <?php for($i=0;$i<5;$i++){ ?>
             <div class="panel-body">
-              <a href="#"><?php echo $recent_post[$i]['title'] ?></a>
+              <a href="<?php echo site_url('post/view/'.$recent_post[$i]['id']) ?>"><?php echo $recent_post[$i]['title'] ?></a>
             </div>
           <?php } ?>
           </div>

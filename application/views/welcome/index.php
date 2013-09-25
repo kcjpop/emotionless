@@ -32,7 +32,7 @@
           <h4 class="post-heading"><?php echo $top_post['title'] ?></h4>
           <span class='poster'>Ngừời viết: admin</span>
           <span class="post-timer">Được đăng vào lúc: <?php echo $top_post['created']->format('H:i:s d-m-Y') ?></span>
-          <span class="post-timer">Sửa lần cuối lúc: <?php echo $top_post['modified']->format('H:i:s d-m-Y') ?>r</span>
+          <span class="post-timer">Sửa lần cuối lúc: <?php echo $top_post['modified']->format('H:i:s d-m-Y') ?></span>
           <hr>
           <div class="content">
             <?php echo $top_post['content'] ?>
@@ -56,7 +56,7 @@
             </div>
             <?php for($i=0;$i<5;$i++){ ?>
             <div class="panel-body">
-              <a href="#"><?php echo $recent_post[$i]['title'] ?></a>
+              <a href="<?php echo site_url('post/view/'.$recent_post[$i]['id']) ?>"><?php echo $recent_post[$i]['title'] ?></a>
             </div>
           <?php } ?>
           </div>
