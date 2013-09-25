@@ -21,4 +21,37 @@ class Article_model extends MY_Model
 
 		return parent::insert($data);
 	}
+	public function get_top_id()
+	{
+		$this->db->select('id');
+		$this->db->from($this->table);
+		$this->db->where('is_top','1');
+		$this->db->limit(1);
+		$query=$this->db->get();
+		if ($query->num_rows()==1)
+		{
+			$data=$query->row();
+			return $data->id;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	public function get_top()
+	{
+		$this->db->select('title, content, created ,modified');
+		$this->db->from($this->table);
+		$this->db->where('is_top','1');
+		$this->db->limit(1);
+		$query=$this->db->get();
+		if ($query->num_rows()==1)
+		{
+			return $query->row();
+		}
+		else
+		{
+			return false;
+		}
+	}
 }

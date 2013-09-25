@@ -5,6 +5,7 @@ class Index extends MY_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('article_model');
 	}
 
 	public function index()
@@ -28,7 +29,10 @@ class Index extends MY_Controller
 				return true;
 			}
 		}
-		$this->render('welcome/index');
+		$data = $this->article_model->get_top();
+		$data->created = new DateTime($data->created);
+		$data->modified = new DateTime($data->modified);
+		$this->render('welcome/index', $data);
 	}
 }
 

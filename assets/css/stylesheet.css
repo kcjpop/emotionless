@@ -106,11 +106,11 @@ hr{
 .post span{
   color: #777;
   font-style: italic;
+  display: block;
 }
 
 .poster{
   font-size: 12px;
-  display: block;
 }
 
 .post-timer{
@@ -157,119 +157,7 @@ hr{
   margin-bottom: 0px !important;
   margin-top: 20px;
 }
-
-.photo-container{
-  width: 600px;
-  position: relative;
-}
-
-.photo-container ul{
-  list-style-type: none;
-}
-
-.link{
-  width: 505px;
-  height: 278px;
-  position: absolute;
-  border: 2px solid black;
-  top: 0; left: 0;
-}
-
-#photo1{
-  background: url(../img/post_img1.jpg) no-repeat;
-}
-
-#photo2{
-  background: url(../img/post_img2.jpg) no-repeat;
-}
-
-#photo3{
-  background: url(../img/post_img3.jpg) no-repeat;
-}
-
-.thumbnail{
-  display: block;
-  width: 155px; height: 87px;
-  border: 2px solid black;
-  position: absolute;
-  text-indent: -9999px;
-  cursor: pointer;
-  border-radius: 0;
-}
-  
-.top{ 
-  top: 290px;
-}
-
-.left1{
-  left: -2px;
-}
-
-.left2{
-  left: 172px;
-}
-
-.left3{
-  left: 348px;
-}
-
-
-#photo1 span{
-  background: url(../img/post_img1.jpg) no-repeat;
-  background-size: 155px 87px;
-}
-
-#photo2 span{
-  background: url(../img/post_img2.jpg) no-repeat;
-  background-size: 155px 87px;
-}
-
-#photo3 span{
-  background: url(../img/post_img3.jpg) no-repeat;
-  background-size: 155px 87px;
-}
-
-.link:hover{
-  z-index: 1000;
-}
-
-.info-container{
-  vertical-align: top;
-  width: 210px;
-  height: 381px;
-  margin-left: 540px;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-}
-
-.info-container h3{
-  color: white;
-  padding: 5px 5px 0px 5px;
-  margin-top: 0px;
-  height: 25px;
-  font-size: 16px;
-  background: #428BCA;
-}
-
-.info-container b, .info-container span{
-  display: block;
-  padding: 0px 5px;
-}
-
-.info-container b{
-  margin-top: 15px;
-}
-
-.info-container b:first-child{
-  margin-top: 0px;
-}
-
-.info-container span{
-  font-style: normal;
-  padding-left: 15px;
-  color: #000;
-}
-
+ 
 .post-body p{
   text-align: justify;
 }
@@ -292,10 +180,6 @@ hr{
   font-style: italic;
 }
 
-#portfolio p{
-  text-align: justify;
-}
-
 .rmb-me{
   width: 50px;
 }
@@ -308,3 +192,17 @@ hr{
   color: #fff;
   text-decoration: none;
 }
+
+.row-mg-bot{
+  padding: 30px 0px;
+  border-bottom: 2px solid #bbb;
+}
+
+.row:first-child{
+  padding-top: 0;
+}
+
+.row:last-child{
+  border-bottom: none;
+}
+

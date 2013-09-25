@@ -96,6 +96,21 @@ class News extends Admin_Controller
 		}
 		$this->render('admin/news/edit', $data);
 	}
+	public function go_top($id)
+	{
+		$data=array();
+		$data['items'] = $this->article_model->gets();
+		$id_track = $this->article_model->get_top_id();
+		$this->article_model->update(array(
+				'id'		=> $id_track,
+				'is_top'	=> '0'
+		));
+		$this->article_model->update(array(
+				'id'		=> $id,
+				'is_top'	=> '1'
+		));
+		redirect(admin_url('news'),'refresh');
+	}
 	public function delete($id)
 	{
 		$this->article_model->delete($id);

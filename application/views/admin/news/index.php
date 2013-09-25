@@ -18,8 +18,8 @@
 			<td><?php echo $item['created'] ?></td>
 			<td><?php echo $item['modified'] ?></td>
 			<td>
-				<a href="<?php echo admin_url('news/edit/'.$item['id']) ?>" class="btn btn-sm"><i class="icon-edit"></i> Edit</a>
-				&mdash;
+				<a href="<?php echo admin_url('news/go_top/'.$item['id']) ?>" class="btn btn-sm"><i class="icon-arrow-up"></i> Top</a>				
+				<a href="<?php echo admin_url('news/edit/'.$item['id']) ?>" class="btn btn-sm"><i class="icon-edit"></i> Edit</a>				
 				<a href="<?php echo admin_url('news/delete/'.$item['id']) ?>" class="btn btn-sm"><i class="icon-trash"></i> Delete</a>
 			</td>
 		</tr>

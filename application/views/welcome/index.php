@@ -25,54 +25,18 @@
 	  </div>
 	</div>
 	<!--/portfolio-->
-
   <!--content-->
   <div id="content" class="container">
     <div class="row">
         <div class="col-md-8 post">
-          <h4 class="post-heading">Bài viết có cái tiêu đề dài trời ơi đất hỡi, ờ thực sự cũng không dài lắm</h4>
-          <span class='poster'>Ngừời viết: Mr.X</span>
-          <span class="post-timer">Được đăng vào lúc: timer</span>
+          <h4 class="post-heading"><?php echo $title ?></h4>
+          <span class='poster'>Ngừời viết: admin</span>
+          <span class="post-timer">Được đăng vào lúc: <?php echo $created->format('H:i:s d-m-Y') ?></span>
+          <span class="post-timer">Sửa lần cuối lúc: <?php echo $modified->format('H:i:s d-m-Y') ?>r</span>
           <hr>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, enim cum illum molestiae iusto et odit sapiente assumenda minus velit quia sed exercitationem veniam optio dolorum dolor quam qui. Ut consequatur quam optio accusantium. Magni velit voluptatibus reprehenderit neque autem ipsam veritatis. Tempore, recusandae, inventore, cum fuga nihil eum obcaecati sint dignissimos nesciunt earum non corporis beatae temporibus nobis delectus tempora doloribus ipsam. Rerum, ab, officiis, sapiente minus quos natus velit id tenetur repellat accusamus dicta cupiditate impedit dolor odit commodi earum ipsum consectetur dolorem corporis voluptas reiciendis nostrum illum iure eaque culpa tempora facere quae autem molestias necessitatibus ea!
-          </p>
-          <table class="tutor-table">
-            <thead class="table-header">
-              <tr>
-                <td>STT</td>
-                <td>Tên lớp</td>
-                <td>Gia sư</td>
-                <td>Địa chỉ</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Toán 12</td>
-                <td>Songoku</td>
-                <td>Hành tinh xayda</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Lý 9</td>
-                <td>Bà Tưng</td>
-                <td>đường x ngõ y phố z</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Anh 10</td>
-                <td>Doraemon</td>
-                <td>nhà thằng Nobita</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, id rerum fugiat quaerat quos architecto necessitatibus quae a tempore laborum asperiores quod repellat error ea dolore temporibus recusandae. Corporis, nemo dolor doloremque. Ut, consectetur, dicta, accusantium cum perspiciatis accusamus molestiae repellendus ratione quae ex assumenda culpa. Inventore, dignissimos, cum perspiciatis doloribus quia optio quasi dolore facilis consequatur minima nam voluptates laborum temporibus ex harum amet distinctio ad debitis magnam cupiditate repellendus quibusdam voluptatibus autem. Aperiam, facilis, quam, similique rerum aspernatur nobis facere praesentium amet laudantium nesciunt tenetur quisquam consequatur quos sint non iste quidem. Sequi, ea mollitia repellendus reprehenderit blanditiis accusamus exercitationem assumenda quia ad numquam consequuntur quibusdam labore recusandae perspiciatis commodi ex pariatur sunt dicta! Placeat, quia, quasi, hic dolores ipsa repellendus rerum dicta quam sapiente a culpa modi commodi consequuntur maxime laudantium consectetur obcaecati magni molestias quas error autem ipsam repudiandae officiis unde suscipit expedita facere nostrum quidem?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ab, nam iure quibusdam accusantium libero aut hic totam eligendi aliquam iusto dignissimos dolor deserunt officia eaque repudiandae perspiciatis delectus aperiam voluptatibus vitae quisquam molestias at nemo porro possimus dolorum consectetur unde quos alias magni similique distinctio voluptates adipisci. Rerum, fuga, alias, unde, voluptates quae dolores voluptate enim sit quo nulla dolore deleniti excepturi consequuntur est assumenda et animi! Nihil, ex veritatis dignissimos nesciunt nobis incidunt in esse voluptas officia facere.
-          </p>
+          <div class="content">
+            <?php echo $content ?>
+          </div>
           <div id="comments">
             <div id="disqus_thread"></div>
               <script type="text/javascript">
