@@ -30,7 +30,11 @@
         </div>
         <div class="col-md-8 pull-top">  
           <h3>Ảnh đại diện</h3>
-          
+<?php if (isset($user_info['avatar']) && !empty($user_info['avatar'])) : ?>
+          <img src="<?php echo site_url('uploads/avatar/'.$user_info['avatar']) ?>" alt="" class="img-thumbnail">
+<?php endif; ?>
+          <h3>Upload Ảnh đại diện</h3>
+          <div id="avatar-uploader"></div>
         </div>
       </div>
     </div>

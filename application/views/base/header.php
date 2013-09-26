@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="<?php echo site_url('assets/css/stylesheet.css') ?>">
   <link rel="stylesheet" href="<?php echo site_url('assets/css/register.css') ?>">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/fineuploader.min.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
 </head>
 <body>

@@ -25,7 +25,12 @@ class Profile extends MY_Controller
 
 	public function update_avatar()
 	{
-		$this->render('profile/update_avatar');
+		$data = array();
+		$this->load->model('user_info_model');
+		$this->load->model('user_model');
+
+		$data['user_info'] = $this->user_info_model->get($this->user_model->get_id());
+		$this->render('profile/update_avatar', $data);
 	}
 	public function send_request()
 	{
