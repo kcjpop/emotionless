@@ -21,7 +21,6 @@ class User extends Admin_Controller
 	public function info($id)
 	{
 		$this->load->model('user_info_model');
-		$id=$this->user_info_model->get_id();
 		$data['user_info']=$this->user_info_model->get($id);
 		$data['user']=$this->user_model->get($id);
 		$this->render('admin/user/info', $data);
