@@ -1,0 +1,27 @@
+.table-head th{
+	background: #444;
+	color: #fff;
+}
+
+.table-width-1{
+	width: 100px !important;
+}
+
+.table-width-2{
+	width: 150px !important;
+}
+
+.table-width-3{
+	width: 200px !important;
+}
+
+.table-width-4{
+	width: 300px !important;
+}
+
+.content{
+	width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

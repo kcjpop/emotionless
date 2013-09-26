@@ -22,13 +22,16 @@ class User extends Admin_Controller
 	{
 		$this->load->model('user_info_model');
 		$data['user_info']=$this->user_info_model->get($id);
-		$data['user']=$this->user_model->get($id);
 		$this->render('admin/user/info', $data);
 	}
 	public function delete($id)
 	{
 		$this->load->model('user_model');
+		$this->load->model('user_info_model');
+		$this->load->model('portfolio_model');
 		$this->user_model->delete($id);
+		$this->user_info_model->delete($id);
+		$this->portfolio_model->delete($id);
 		redirect(admin_url('user'),'refresh');
 	}
 }

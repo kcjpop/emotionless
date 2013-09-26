@@ -209,3 +209,19 @@ hr{
 .ico-fix{
   margin: 10px 0;
 }
+
+#avatar-uploader{
+  margin-top: 10px;
+}
+
+.tutor-info span{
+  display: block;
+}
+
+.tutor-info td{
+  background: #fff;
+}
+
+.tutor-info td:first-child{
+  width: 25%;
+}

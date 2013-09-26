@@ -1,8 +1,8 @@
 <h3>All users</h3>
-<table class="table table-bordered table-striped table-hover">
+<table class="table table-bordered table-striped table-hover table-head">
 	<thead>
 		<tr>
-			<th>Username</th>
+			<th class='table-width-2'>Username</th>
 			<th>Email</th>
 			<th>Info</th>
 			<th>Actions</th>

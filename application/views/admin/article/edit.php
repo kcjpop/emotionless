@@ -6,12 +6,12 @@
 <?php echo form_open(admin_url('article/edit/'.$id)) ?>
 <div class="form-group">
 	<label>Title*</label>
-	<?php echo form_input('title', '', 'class="form-control"') ?>
+	<?php echo form_input('title', $item['title'], 'class="form-control"') ?>
 </div>
 
 <div class="form-group">
 	<label>Content*</label>
-	<?php echo form_textarea('content', '', 'class="form-control rich"') ?>
+	<?php echo form_textarea('content', $item['content'], 'class="form-control rich"') ?>
 </div>
 
 <button type="submit" class="btn btn-primary">Save</button>

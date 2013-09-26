@@ -23,12 +23,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo site_url() ?>" target="_blank">Trang chủ</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">You <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="">Logout</a></li>
-					</ul>
-				</li>
+				<li><a href="<?php echo site_url('auth/logout') ?>">Thoát</a></li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->

@@ -58,14 +58,6 @@
                 <input type="password" name="password" placeholder="Mật khẩu" class="form-control">
               </div>
               <button type="submit" class="btn btn-success">Đăng nhập</button>
-              <div class="form-group">
-                <div class="input-group rmb-me">
-                  <span class="input-group-addon">
-                    <input type="checkbox" name="rmb-me" class="checkbox-addon">
-                  </span>
-                  <button class="btn btn-default form-control" type="button"><span class="glyphicon glyphicon-floppy-save"></span></button>
-                </div>
-              </div>
             </form>
             <?php
               }

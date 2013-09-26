@@ -9,7 +9,7 @@
           <hr>
           <div class="content">
             <?php echo $post['content'] ?>
-            <a href="<?php echo site_url('post') ?>" class="ico-fix pull-right"><i class="icon-arrow-left"></i> Quay lại</a>
+            <a href="<?php echo site_url('post') ?>" class="ico-fix pull-right"><i class="icon-arrow-left"></i> Back</a>
           </div>
           <div id="comments">
             <div id="disqus_thread"></div>

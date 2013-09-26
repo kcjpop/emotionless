@@ -42,6 +42,7 @@ class Auth extends CI_Controller
 			$this->user_info_model->insert(array(
 				'id'=>$id
 			));
+			
 			// @todo: Display success message
 			// Redirect to home page
 			redirect(site_url());
@@ -145,13 +146,18 @@ class Auth extends CI_Controller
 		));
 		$data['user_info'] = $this->user_info_model->get($id);
 		$this->load->model('portfolio_model');
-		$this->portfolio_model->insert(array(
-			'id'			=> $id
-		));
+		if ($this->portfolio_model->check_id($id)==FALSE)
+		{
+			$this->portfolio_model->insert(array(
+				'id'			=> $id
+				));
+		}
 		$this->portfolio_model->update(array(
 			'id'			=> $id,
 			'fullname'		=> $data['user_info']['fullname'],
-			'class'			=> $data['user_info']['class']
+			'class'			=> $data['user_info']['class'],
+			'note'			=> $data['user_info']['note'],
+			'avatar'		=> $data['user_info']['avatar']
 		));
 		redirect(site_url('profile'));
 	}

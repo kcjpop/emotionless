@@ -15,16 +15,16 @@
               <a href="<?php echo site_url('profile/update_info') ?>">Thông tin cá nhân</a>
             </div>
             <div class="panel-body">
-              <a href="<?php echo site_url('profile/send_request') ?>">Đăng ký làm gia sư</a>
+              <a href="<?php echo site_url('profile/send_request') ?>">Đăng ký làm gia sư - cập nhật mới</a>
             </div>
             <div class="panel-heading panel-border-fix">
               <a href="<?php echo site_url('profile') ?>"><h3 class="panel-title">Tủy chỉnh</h3></a>
             </div>
             <div class="panel-body">
-              <a href="#">Tài khoản</a>
+              <a href="<?php echo site_url('profile/account') ?>">Tài khoản</a>
             </div>
             <div class="panel-body panel-last">
-              <a href="#">Bảo mật</a>
+              <a href="<?php echo site_url('profile/security') ?>">Bảo mật</a>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
                   </select>
                 </div>
                 <textarea name="class" class="form-control" placeholder="Môn dạy - ngăn cách bởi dấu phẩy, nối tiếp lớp bởi dấu gạch. Ví dụ: Toán 10-11, Lý 12" cols="30" rows="5"></textarea>
-                <textarea name="note" class="form-control bottom-input" placeholder="Ghi chú thêm - không quá 150 kí tự. Phần này sẽ được thêm vào hồ sơ của bạn khi hiển thị" cols="30" rows="5"></textarea>
+                <textarea name="note" class="form-control bottom-input" placeholder="Lời chào - không quá 150 kí tự. Lời chào sẽ được thêm vào hồ sơ của bạn khi hiển thị" cols="30" rows="5"></textarea>
                 <button type="submit" class="btn btn-primary form-submit">Xác nhận</button>
           </form>
         </div>

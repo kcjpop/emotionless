@@ -67,6 +67,7 @@ class Article extends Admin_Controller
 	{
 		$data = array();
 		$data['id'] = $id;
+		$data['item'] = $this->article_model->get($id);
 		$now = new DateTime();
 		$this->form_validation->set_rules(
 			'title',
