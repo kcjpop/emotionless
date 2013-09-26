@@ -24,11 +24,21 @@ class Upload extends MY_Controller
 		{
 			$data = $this->upload->data();
 
+			// Store image
 			$this->load->model('user_info_model');
 			$this->load->model('user_model');
 			$user_info = $this->user_info_model->get($this->user_model->get_id());
 			$user_info['avatar'] = $data['file_name'];
 			$this->user_info_model->update($user_info);
+
+			// Resize 
+			$config['image_library']  = 'gd2';
+			$config['source_image']   = $data['full_path'];
+			$config['width']          = 120;
+			$config['height']         = intval($data['image_height'] * $config['width'] / $data['image_width']);
+
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
 
 			$json['success'] = TRUE;
 			$json['data']    = $data;
