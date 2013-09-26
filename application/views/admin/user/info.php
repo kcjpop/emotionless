@@ -22,7 +22,7 @@
 			<td><?php echo $user_info['tel'] ?></td>
 			<td><?php echo $user_info['dob'] ?></td>
 			<td><?php echo $user_info['sex'] ?></td>
-			<td><?php echo $user_info['major'] ?></td>
+			<td><?php echo $user_info['class'] ?></td>
 			<td><?php echo $user_info['note'] ?></td>
 		</tr>
 	</tbody>

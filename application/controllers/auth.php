@@ -85,6 +85,7 @@ class Auth extends CI_Controller
 			echo validation_errors();
 		}
 	}
+	
 	public function update_info()
 	{
 		$this->form_validation->set_rules(
@@ -123,7 +124,8 @@ class Auth extends CI_Controller
 				'tel'				=> $this->input->post('tel',TRUE),
 				'dob'				=> $this->input->post('dob_year', TRUE).'-'.$this->input->post('dob_month', TRUE).'-'.$this->input->post('dob_day', TRUE),
 				'sex'				=> $this->input->post('sex',TRUE),
-				'note'				=>$this->input->post('note', TRUE)
+				'class'				=> $this->input->post('class',TRUE),
+				'note'				=> $this->input->post('note', TRUE)
 			));
 			redirect(site_url('auth/success'));
 		}
@@ -132,10 +134,33 @@ class Auth extends CI_Controller
 			echo validation_errors();
 		}
 	}
+
+	public function send_request()
+	{
+		$this->load->model('user_info_model');
+		$id=$this->user_info_model->get_id();
+		$this->user_info_model->update(array(
+			'id'			=> $id,
+			'is_sent'		=> '1'
+		));
+		$data['user_info'] = $this->user_info_model->get($id);
+		$this->load->model('portfolio_model');
+		$this->portfolio_model->insert(array(
+			'id'			=> $id
+		));
+		$this->portfolio_model->update(array(
+			'id'			=> $id,
+			'fullname'		=> $data['user_info']['fullname'],
+			'class'			=> $data['user_info']['class']
+		));
+		redirect(site_url('profile'));
+	}
+
 	public function success()
 	{
 		$this->load->view('profile/success');
 	}
+
 	public function logout()
 	{
 		$this->session->unset_userdata('logged_in');

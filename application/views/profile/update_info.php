@@ -131,7 +131,7 @@
                     <option>Khác</option>
                   </select>
                 </div>
-                <textarea name="class" class="form-control" placeholder="Môn dạy - ngăn cách bởi dấu phẩy. Ví dụ: Toán 10, Toán 11, Lý 12" cols="30" rows="5"></textarea>
+                <textarea name="class" class="form-control" placeholder="Môn dạy - ngăn cách bởi dấu phẩy, nối tiếp lớp bởi dấu gạch. Ví dụ: Toán 10-11, Lý 12" cols="30" rows="5"></textarea>
                 <textarea name="note" class="form-control bottom-input" placeholder="Ghi chú thêm - không quá 150 kí tự. Phần này sẽ được thêm vào hồ sơ của bạn khi hiển thị" cols="30" rows="5"></textarea>
                 <button type="submit" class="btn btn-primary form-submit">Xác nhận</button>
           </form>

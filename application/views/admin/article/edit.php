@@ -3,7 +3,7 @@
 	<div class="alert alert-danger"><?php echo $validation_errors ?></div>
 <?php endif; ?>
 
-<?php echo form_open(admin_url('news/edit/'.$id)) ?>
+<?php echo form_open(admin_url('article/edit/'.$id)) ?>
 <div class="form-group">
 	<label>Title*</label>
 	<?php echo form_input('title', '', 'class="form-control"') ?>

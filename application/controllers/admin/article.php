@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class News extends Admin_Controller
+class Article extends Admin_Controller
 {
 	public function __construct()
 	{
@@ -20,7 +20,7 @@ class News extends Admin_Controller
 
 		// Display all articles in database
 		$data['items'] = $this->article_model->gets();
-		$this->render('admin/news/index', $data);
+		$this->render('admin/article/index', $data);
 	}
 
 	public function form()
@@ -51,7 +51,7 @@ class News extends Admin_Controller
 				));
 
 				// Redirect to the main page
-				redirect(admin_url('news'));
+				redirect(admin_url('article'));
 			}
 			else
 			{
@@ -61,7 +61,7 @@ class News extends Admin_Controller
 		}
 
 		// Show the form to user
-		$this->render('admin/news/form', $data);
+		$this->render('admin/article/form', $data);
 	}
 	public function edit($id)
 	{
@@ -88,13 +88,13 @@ class News extends Admin_Controller
 				'content' 	=> $this->input->post('content'),
 				'modified'	=> $now->format(DateTime::ISO8601)
 			));
-			redirect(admin_url('news'));
+			redirect(admin_url('article'));
 		}
 		else
 		{
 			$data['validation_errors'] = validation_errors();
 		}
-		$this->render('admin/news/edit', $data);
+		$this->render('admin/article/edit', $data);
 	}
 	public function go_top($id)
 	{
@@ -109,11 +109,11 @@ class News extends Admin_Controller
 				'id'		=> $id,
 				'is_top'	=> '1'
 		));
-		redirect(admin_url('news'),'refresh');
+		redirect(admin_url('article'),'refresh');
 	}
 	public function delete($id)
 	{
 		$this->article_model->delete($id);
-		redirect(admin_url('news'),'refresh');
+		redirect(admin_url('article'),'refresh');
 	}
 }

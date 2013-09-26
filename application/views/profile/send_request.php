@@ -34,7 +34,9 @@
             <p>Lưu ý: chỉ có hồ sơ được điền đầy đủ tất cả các mục mới được xét duyệt để thông qua.</p>
             <p>Khi hồ sơ của bạn được chúng tôi duyệt thành công sẽ có thông báo gửi về địa chỉ email của bạn.</p>
             <p>Cảm ơn bạn đã hợp tác với trung tâm.</p>
-            <button type="submit" class="btn btn-lg btn-primary">Gửi</button>
+            <form action="<?php echo site_url('auth/send_request') ?>" method="post">
+              <button type="submit" class="btn btn-lg btn-primary">Gửi</button>
+            </form>
           </div>
         </div>
       </div>

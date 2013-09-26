@@ -4,7 +4,7 @@
 <?php endif; ?>
 
 
-<?php echo form_open(admin_url('news/form')) ?>
+<?php echo form_open(admin_url('article/form')) ?>
 <div class="form-group">
 	<label>Title*</label>
 	<?php echo form_input('title', '', 'class="form-control"') ?>
