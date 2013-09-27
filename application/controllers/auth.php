@@ -54,6 +54,49 @@ class Auth extends CI_Controller
 			echo validation_errors();
 		}
 	}
+	public function login()
+	{
+		$this->load->model('user_model');
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('username', 'Username', 'required|trim|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'required|trim|xss_clean');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+
+		$this->dbCheck($username, $password);
+		if ($this->form_validation->run() == FALSE)
+		{
+			redirect(site_url());
+		}
+		else
+		{
+			redirect(site_url() , 'refresh');
+		}
+	}
+	public function dbCheck($username, $password)
+	{
+		$this->load->model('user_model');
+		$result = $this->user_model->login($username, $password);
+		if ($result)
+		{
+			$sess_array = array();
+			foreach($result as $row)
+			{
+				$sess_array = array(
+					'id' 		=> $row->id,
+					'username' 	=> $row->username,
+					'is_admin' 	=> $row->is_admin
+				);
+				$this->session->set_userdata('logged_in', $sess_array);
+			}
+			return true;
+		}
+		else
+		{
+			$this->form_validation->set_message('dbCheck', 'Invalid username or password');
+			return false;
+		}
+	}
 	public function update_pwd()
 	{
 		$this->form_validation->set_rules(

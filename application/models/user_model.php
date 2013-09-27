@@ -9,7 +9,7 @@ class User_model extends MY_Model
 	protected $table = 'users';
 	public function login($username, $password)
 	{
-		$this->db->select('id, username, password');
+		$this->db->select('id, username, password, is_admin');
 		$this->db->from($this->table);
 		$this->db->where('username', $username);
 		$this->db->where('password', md5($password));
@@ -24,7 +24,11 @@ class User_model extends MY_Model
 			return false;
 		}
 	}
-	
+	public function is_admin()
+	{
+		$session = $this->session->userdata('logged_in');
+		return $session['is_admin'];
+	}
 	public function is_logged_in()
 	{
 		if ($this->session->userdata('logged_in')){

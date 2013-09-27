@@ -35,13 +35,15 @@
           <?php
             if ($this->session->userdata('logged_in')){
               $session_data=$this->session->userdata('logged_in');
-              $user_username=$session_data['username'];
           ?>
               <div id="user-panel" class="container pull-right">
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li><a>Xin chào, <?php echo $user_username ?></a></li>
+                    <li><a>Xin chào, <?php echo $session_data['username'] ?></a></li>
                     <li><a href="<?php echo site_url('profile') ?>"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <?php if ($session_data['is_admin']==1){ ?>
+                    <li><a href="<?php echo admin_url() ?>"><span class="glyphicon glyphicon-cog"></span></a></li>
+                    <?php } ?>
                     <li><a href="<?php echo site_url('auth/logout') ?>"><span class="glyphicon glyphicon-off"></span></a></li>
                   </ul>
                 </div>
@@ -50,7 +52,7 @@
             }
           else{
             ?>
-            <form class="navbar-form navbar-right" method="POST" action  ="<?php echo site_url('login') ?>">
+            <form class="navbar-form navbar-right" method="POST" action  ="<?php echo site_url('auth/login') ?>">
               <div class="form-group">
                 <input type="text" name="username" placeholder="Tên đăng nhập" class="form-control">
               </div>

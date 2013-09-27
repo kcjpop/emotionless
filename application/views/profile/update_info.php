@@ -31,21 +31,21 @@
         <div class="col-md-8 pull-top">
           <h3>Thông tin cá nhân</h3>
           <form action="<?php echo site_url('auth/update_info') ?>" method="post" class="form-signup form-fix">
-                <input name="fullname" type="text" class="form-control top-input" placeholder="Họ và tên">
-                <input name="workplace" type="text" class="form-control" placeholder="Nơi học tập - công tác">
-                <input name="address" type="text" class="form-control" placeholder="Địa chỉ">
-                <input name="tel" type="text" class="form-control" placeholder="Số điện thoại">
+                <input name="fullname" type="text" class="form-control top-input" placeholder="Họ và tên"  value="<?php echo $user_info['fullname'] ?>">
+                <input name="workplace" type="text" class="form-control" placeholder="Nơi học tập - công tác" value="<?php echo $user_info['workplace'] ?>">
+                <input name="address" type="text" class="form-control" placeholder="Địa chỉ" value="<?php echo $user_info['address'] ?>">
+                <input name="tel" type="text" class="form-control" placeholder="Số điện thoại" value="<?php echo $user_info['tel'] ?>">
                 <div class="form-control">
-                  <select name="dob_day"class="form-control dob dob-left">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
+                  <select name="dob_day"class="form-control dob dob-left" value="<?php echo substr($user_info['dob'],8,2) ?>">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
                     <option>10</option>
                     <option>11</option>
                     <option>12</option>
@@ -69,21 +69,21 @@
                     <option>30</option>
                     <option>31</option>
                   </select>
-                  <select name="dob_month" class="form-control dob">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
+                  <select name="dob_month" class="form-control dob" value="<?php echo substr($user_info['dob'],5,3) ?>">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
                     <option>10</option>
                     <option>11</option>
                     <option>12</option>
                   </select>
-                  <select name="dob_year" class="form-control dob">
+                  <select name="dob_year" class="form-control dob" value="<?php echo substr($user_info['dob'],0,4) ?>">
                     <option>1961</option>
                     <option>1962</option>
                     <option>1963</option>
@@ -125,14 +125,14 @@
                     <option>1999</option>
                     <option>2000</option>
                   </select>
-                  <select name="sex" class="form-control sex">
+                  <select name="sex" class="form-control sex" value="<?php echo $user_info['sex'] ?>">
                     <option>Nam</option>
                     <option>Nữ</option>
                     <option>Khác</option>
                   </select>
                 </div>
-                <textarea name="class" class="form-control" placeholder="Môn dạy - ngăn cách bởi dấu phẩy, nối tiếp lớp bởi dấu gạch. Ví dụ: Toán 10-11, Lý 12" cols="30" rows="5"></textarea>
-                <textarea name="note" class="form-control bottom-input" placeholder="Lời chào - không quá 150 kí tự. Lời chào sẽ được thêm vào hồ sơ của bạn khi hiển thị" cols="30" rows="5"></textarea>
+                <textarea name="class" class="form-control" placeholder="Môn dạy - ngăn cách bởi dấu phẩy, nối tiếp lớp bởi dấu gạch. Ví dụ: Toán 10-11, Lý 12" value="<?php echo $user_info['class'] ?>"cols="30" rows="5"></textarea>
+                <textarea name="note" class="form-control bottom-input" placeholder="Lời chào - không quá 150 kí tự. Lời chào sẽ được thêm vào hồ sơ của bạn khi hiển thị" value="<?php echo $user_info['note'] ?>" cols="30" rows="5"></textarea>
                 <button type="submit" class="btn btn-primary form-submit">Xác nhận</button>
           </form>
         </div>

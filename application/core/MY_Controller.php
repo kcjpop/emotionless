@@ -47,5 +47,11 @@ class Admin_Controller extends MY_Controller
 
 		$this->base_header = 'base/admin_header';
 		$this->base_footer = 'base/admin_footer';
+		$data = array();
+		$this->load->model('user_model');
+		if ($this->user_model->is_admin()==0)
+		{
+			redirect(site_url());
+		}
 	}
 }
